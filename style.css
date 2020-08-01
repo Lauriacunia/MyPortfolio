@@ -13,16 +13,10 @@ body {
         NAV BAR
 ----------------------------------*/
 
-nav {
-    margin-left: 60%;
-    
-}
-
 ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .menu {
@@ -73,19 +67,62 @@ img {
         SECCIÓN CONOCIMIENTOS
 ----------------------------------*/
 
-.seccion-2 {
+.seccion-misConocimientos {
     background-color: red;
-    height: 400px;
+    height: auto;
 }
+
+
+/*--------------------------------
+        SECCIÓN CITA
+----------------------------------*/
+
+
+
 
 .seccion-3 {
     background-color: blue;
     height: 400px;
 }
 
+.bloque{
+    text-align: center; 
+    background-color: crimson;
+}
+
+.tarjeta  {
+    background-color: azure;   
+    border: 2px solid gray;
+    width: 200px;
+    height: 200px;
+    padding: 10px; /* Almohadita alrrededor*/
+    margin: 10px; 
+
+    text-align: center;
+    box-sizing: border-box; /*La tarjeta no modifica
+     su tamaño - incluye adentro el borde y el padding
+     -No se lo adiciona a su tamaño*/
+    display: inline-block; /* Comportate 
+    como un elemento en linea */
+    
+}
+/*Las imagenes tienen su propio tamaño
+y su relacion de aspecto*/
+.imagen {
+    width: 130px;
+    height: 130px;
+
+}
+
+/*--------------------------------
+        SECCIÓN PROYECTOS
+----------------------------------*/
 .seccion-4 {
     background-color: orangered;
     height: 400px;
 }
 
+/*--------------------------------
+        FOOTER
+----------------------------------*/
 

@@ -2,70 +2,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: #fafafa;
-
-}
-h1{
-    font-family: 'Suez One', serif;
-    font-size: 70px;
-    font-weight: 900;
-    
-}
-
-h3{
-    font-size: 30px;
-    margin-top: 0;
-    margin-bottom: 5px;
-    font-weight: 800;
-}
-
-h5{
-    font-family: 'Josefin Slab', serif;
-    letter-spacing: 3px;
-    font-size: 16px;
-    margin-bottom: 40px;
-
-}
-.beige{
-    background-color:#D4BE7D;
-}
 /*--------------------------------
-        NAV BAR
+        HEADER
 ----------------------------------*/
+header{
 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+    position: relative;
+}
+.barra{
+
+    max-width: 70%;
+    padding: 10px;
+    padding-right: 40px;
+
+}
 ul {
-    font-family: 'Josefin Slab', serif;
-    letter-spacing: 3px;
+
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: flex-center;
+
 }
 
 .menu {
+
     font-family: 'Josefin Slab', serif;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
+    cursor: pointer;
+
 }
 
 .button {
-    font-family: 'Josefin Slab', serif;
-    letter-spacing: 3px;
+
     background-color:#90A437;
     border-radius: 15px;
     border: 0;
     font-size: 1em;
     color: #2e2e31;
-    cursor: pointer;
-
-
+    
 }
 
 /*--------------------------------
@@ -73,38 +64,62 @@ ul {
 ----------------------------------*/
 
 .seccion-hola { 
-    
+
     background-color:#130817;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: auto;
-    padding-top: 300;
-    
+    width: auto; 
 
 }
-.blanco{
-    color: aliceblue;
-}
-.rosa{
-    color:#D788C8;
-}
 .contenedor-hola {
+
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    margin-top:150px;
+    margin-bottom: 150px;
     width: 100%;
     max-width: 1100px;
-    
+
 }
 
 .contenido-hola {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    justify-content: left;
+    margin-top: 70px;
     width: 100%;
-    padding: 10px;     
-    
+           
 }
+
+.hola{
+
+    color: aliceblue;
+    font-family: "Montserrat", serif;
+    margin-button:10px;
+
+}
+
+.nombre{
+
+    color:#D788C8;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.descripcion{
+    color: aliceblue;
+    font-family: 'Quicksand', sans-serif;
+    font-size: smaller;
+    margin-top:10px;
+}
+
+.lo-que-hago{
+   max-width: 200px;
+   margin:0px;
+}
+
+
 .center {
     align-items: center;
 }
@@ -206,7 +221,40 @@ y su relacion de aspecto*/
     margin: 0.5em 0;
     padding: 0 30px;
 }
+
 /*--------------------------------
         FOOTER
 ----------------------------------*/
 
+
+
+
+
+
+
+
+h1{
+    font-family: 'Suez One', serif;
+    font-size: 60px;
+    font-weight: 900;
+    
+}
+
+h3{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+h5{
+    font-family: 'Josefin Slab', serif;
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin-bottom: 40px;
+
+}
+
+.beige{
+    background-color:#D4BE7D;
+}

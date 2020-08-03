@@ -19,6 +19,7 @@ header{
 
     display: flex;
     flex-direction: row;
+    background-color: #F5F3F5;
     justify-content: flex-end;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
     position: relative;
@@ -51,7 +52,7 @@ ul {
 
 .button {
 
-    background-color:#90A437;
+    background-color:#8EA367;
     border-radius: 15px;
     border: 0;
     font-size: 1em;
@@ -66,6 +67,7 @@ ul {
 .seccion-hola { 
 
     background-color:#130817;
+    background: linear-gradient(180deg,#130817, #3f091c);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -103,12 +105,12 @@ ul {
 
 .nombre{
 
-    color:#D788C8;
+    color:#E580A4;
     font-family: 'Ubuntu', sans-serif;
 
 }
 .descripcion{
-    color: aliceblue;
+    color: #827E7A;
     font-family: 'Quicksand', sans-serif;
     font-size: smaller;
     margin-top:10px;
@@ -144,12 +146,34 @@ img {
         SECCIÓN CONOCIMIENTOS
 ----------------------------------*/
 
-.seccion-misConocimientos {
-    background-color: red;
+.seccion-misconocimientos {
+    justify-content: center;
+    background-color: #9F8270;
     height: auto;
+}
+.contenedor-conocimientos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 
+.titulo-mediano{
+    text-align: center;
+    color:#130817;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    
+}
+.contenedor-frase{
+    width: 450px;
+}
+.frase{
+    text-align: center;
+    color: #404518;
+    font-family: 'Quicksand', sans-serif;
+}
 /*--------------------------------
         SECCIÓN CITA
 ----------------------------------*/

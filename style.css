@@ -195,7 +195,7 @@ img {
     font-family: 'Mansalva', cursive;
     font-size: 50px;
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 .contenedor-frase{
     display: flex;
@@ -265,27 +265,50 @@ img {
 ----------------------------------*/
 .seccion-misproyectos {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 110px 40px 130px;
-    text-align: center;
+    align-items: center;
+    
 }
 .contenido{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1100px;
+    height: 100%;
 }
 .filtros{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-.ir-a{
-    line-height: 2.5;
-    margin: 0.5em 0;
-    padding: 0 30px;
+
+
+.imagenes-proyectos{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    max-width: 1300px;
+
+}
+.proyecto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #dac9e0;   
+    width: 350px;
+    height: 350px;
+    padding: 30px;
+    margin:40px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.imagen{
+    width: 200px;
+    height: auto;
 }
 
 /*--------------------------------

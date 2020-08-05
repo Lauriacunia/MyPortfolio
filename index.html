@@ -11,12 +11,12 @@
 
 <body>
     <header>
-        <nav class= "barra">
+        <nav class="barra">
             <ul>
-                <li class="menu">HOLA</li>
-                <li class="menu">CONOCIMIENTOS</li>
-                <li class="menu">PROYECTOS</li>
-                <li class="menu button">CONTACTO</li>
+                <li class="menu"><a href="#hola">HOLA</a></li>
+                <li class="menu"><a href="#conocimientos">CONOCIMIENTOS</a></li>
+                <li class="menu"><a href="#proyectos">PROYECTOS</a></li>
+                <li class="menu button"><a href="#contacto"> CONTACTO </a></li>
             </ul>
         </nav>
     </header>
@@ -25,10 +25,10 @@
         <div class="contenedor-hola">
 
             <div class="contenido-hola">
-                <h3 class="hola"> ¡Hola!, soy </h3>
+                <h3 class="hola" id="hola"> ¡Hola!, soy </h3>
                 <h1 class="nombre"> Laurita Acuña</h1>
                 <h5 class="descripcion"> Desarrolladora Backend, cantante y espíritu curioso </h5>
-                <p class="menu button lo-que-hago">LO QUE HAGO</p>
+                <p class="menu button github"><a href="https://github.com/Lauriacunia">MI GITHUB</a></p>
             </div>
 
             <div>
@@ -37,37 +37,37 @@
         </div>
     </section>
 
-    <section class="seccion-misconocimientos">
-        
-        <div class="contedor-conocimientos">
+    <section class="seccion-misconocimientos" id="conocimientos">
+
+        <div class="contenedor-conocimientos">
 
             <div>
                 <h2 class="titulo-mediano">Mis conocimientos</h2>
             </div>
 
             <div class="contenedor-frase">
-                <p class="frase">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga nostrum officiis sint
-                    minima,architecto blanditiis delectus molestias perspiciatis autem facere eius illo. Tempora harum
-                    accusantium cupiditate blanditiis facere minus ullam?</p>
+                <p class="frase">Sin el juego el aprendizaje y la evolución son imposibles.<br> El trabajo creativo es
+                    juego, <br> es especulación libre usando los materiales<br> de la forma que cada uno elija.<br> La mente creativa
+                    juega con los objetos que ama...<br>y éstos son mis juguetes favoritos...</p>
             </div>
 
-            <div class=linea></div>
+            <div class=linea>
 
                 <div class="tarjeta">
                     <img class="imagen" src="images/git.png" />
-                    <p>GIT</p>
+                    <p class="skill">GIT</p>
                 </div>
 
                 <div class="tarjeta">
                     <img class="imagen" src="images/html5.png" />
-                    <p>HTML 5</p>
+                    <p class="skill">HTML 5</p>
                 </div>
 
 
                 <div class="tarjeta">
                     <img class="imagen" src="images/js.png" />
-                    <p>JS</p>
-                </div>  
+                    <p class="skill">JS</p>
+                </div>
 
             </div>
 
@@ -75,151 +75,146 @@
 
                 <div class="tarjeta">
                     <img class="imagen" src="images/sass.png" />
-                    <p>Sass</p>
+                    <p class="skill">Sass</p>
                 </div>
 
                 <div class="tarjeta">
                     <img class="imagen" src="images/react.png" />
-                    <p>React</p>
+                    <p class="skill">React</p>
                 </div>
 
 
                 <div class="tarjeta">
                     <img class="imagen" src="images/css3.png" />
-                    <p>CSS 3</p>
+                    <p class="skill">CSS 3</p>
                 </div>
             </div>
-            
+
         </div>
 
     </section>
 
-    <section class="seccion-3 comillas">
-        <div class="contenido-hola center">
-            <i class="fas fa-quote-right quote-icon grande "></i>
-            <blockquote class="cita grande"> acá va la cita Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Facere, delectus quod
-                est cupiditate quisquam alias vero ex commodi praesentium corrupti expedita, sapiente aperiam tempore
-                perferendis reiciendis esse ab aliquid perspiciatis similique repellendus dolores ducimus repellat
-                labore. Eligendi itaque veniam odio. Fugit vel consectetur est error? Laboriosam qui accusamus explicabo
-                eligendi nemo maiores esse! Sapiente omnis incidunt pariatur eum quae natus iure, a porro nobis voluptas
-                consectetur, vel aliquam? Libero, possimus! Ullam eveniet repellat dicta voluptatibus odit beatae
-                corrupti? Voluptatem sequi modi esse minima vel? Totam voluptates ex tempore a dicta, iste placeat
-                debitis, voluptatum consequuntur libero nisi quo itaque architecto unde earum accusamus eveniet, omnis
-                dolores vero porro dolorum odio magni sint. Nulla soluta eius cum porro magnam hic? Mollitia.
+    <section class="seccion-cita">
+        <div class="cita">
+            <i class="fa-quote-right"></i>
+            <blockquote class="cita grande"> Mi vida podría ser una letra de "El Cuarteto de Nos": ya fui hippie, ya
+                viajé, ya estudié, ya me recibí en la UBA,ya hice un podcats, ya escribi, ya enseñé y aprendí".<br> ¿y ahora
+                qué?<br> "Vos siempre cambiando! Ya no cambiás más!" <br> ¡Ahora quiero se desarrolladora Backed! <br>¿Porqué? Porque
+                amo los desafíos creativos, porque me encanta aprender cosas nuevas,<br>y porque todavía siento me falta
+                mejorar el estribillo de mi canción.
             </blockquote>
             <h2>someone</h2>
         </div>
 
     </section>
 
-    <section class="seccion-misproyectos">
+    <section class="seccion-misproyectos" id="proyectos">
         <div class="contenido">
             <h2>Mis proyectos</h2>
             <nav>
-                <div class= "filtros"></div>
-                     <ul>
-                        <li class="menu button">Todos</li>
-                        <li class="menu button">HTML/CSS</li>
-                        <li class="menu button">JavaScript</li>
-                        <li class="menu button">React</li>
-                        <li class="menu button">Java</li>
-                    </ul>
-                </div>
-          
-            
-            <div>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    <figure></figure>
-                      <img src="images/clip-woman-resting-on-nature-1" alt="" class="imagen">
-                      <figcaption class="project-name">Portfolio</figcaption>
-                    </figure>
-                  </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    <figure>
+                <div class="filtros"></div>
+                <ul>
+                    <li class="menu button">Todos</li>
+                    <li class="menu button">HTML/CSS</li>
+                    <li class="menu button">JavaScript</li>
+                    <li class="menu button">React</li>
+                    <li class="menu button">Java</li>
+                </ul>
+        </div>
+
+
+        <div>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <figure></figure>
+                <img src="images/clip-woman-resting-on-nature-1" alt="" class="imagen">
+                <figcaption class="project-name">Portfolio</figcaption>
+                </figure>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <figure>
                     <img src="images/clip-online-shopping-3.png" alt="" class="imagen">
                     <figcaption class="project-name">Tienda</figcaption>
-                    </figure>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" >
-                    <figure>
+                </figure>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <figure>
                     <img src="images/pluto-67.png" alt="" class="imagen">
                     <figcaption class="project-name">Juego de la memoria</figcaption>
-                    </figure>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" >
-                    <figure>
+                </figure>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <figure>
                     <img src="images/lime-delivery-2.png" alt="" class="imagen">
                     <figcaption class="project-name">
                         Controlador de gastos
                     </figcaption>
-                    </figure>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" >
-                    <figure>
+                </figure>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <figure>
                     <img src="images/pluto-coming-soon-1.png" alt="" class="imagen">
                     <figcaption class="project-name">
                         Administrador de reuniones
                     </figcaption>
-                    </figure>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" >
-                    <figure>
+                </figure>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <figure>
                     <img src="images/pablita-social-network-1.png" alt="" class="imagen">
                     <figcaption class="project-name">Todo app</figcaption>
-                    </figure>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" >
-                    <figure>
+                </figure>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <figure>
                     <img src="pablita-cinema.png" alt="" class="imagen">
                     <figcaption class="project-name">
                         Buscador de películas
                     </figcaption>
-                    </figure>
-                </a>
-                </div>
+                </figure>
+            </a>
+        </div>
         </div>
     </section>
 
 
-    <footer>
-     
-      <nav class="footer-nav">
-        <ul class="footer-nav-menu">
-          <li class="footer-nav-item">
-            <a href="#about" class="footer-nav-link">HOLA</a>
-          </li>
-          <li class="footer-nav-item">
-            <a href="#skills" class="footer-nav-link">CONOCIMIENTOS</a>
-          </li>
-          <li class="footer-nav-item">
-            <a href="#projects" class="footer-nav-link">PROYECTOS</a>
-          </li>
-          <li class="footer-nav-item">
-            <a href="#contact" class="footer-nav-link">CONTACTO</a>
-          </li>
+    <footer id="contacto">
+
+        <nav class="footer-nav">
+            <ul class="footer-nav-menu">
+                <li class="footer-nav-item">
+                    <a href="#about" class="footer-nav-link">HOLA</a>
+                </li>
+                <li class="footer-nav-item">
+                    <a href="#skills" class="footer-nav-link">CONOCIMIENTOS</a>
+                </li>
+                <li class="footer-nav-item">
+                    <a href="#projects" class="footer-nav-link">PROYECTOS</a>
+                </li>
+                <li class="footer-nav-item">
+                    <a href="#contact" class="footer-nav-link">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Navegación footer -->
+        <ul class="footer-social-links">
+            <li class="footer-social-item">
+                <a href="" class="footer-social-link twitter-link">
+                    <i class="fab fa-twitter footer-social-icon"></i></a>
+            </li>
+            <li class="footer-social-item">
+                <a href="" class="footer-social-link github-link">
+                    <i class="fab fa-github-alt footer-social-icon"></i></a>
+            </li>
+            <li class="footer-social-item">
+                <a href="" class="footer-social-link linkedin-link">
+                    <i class="fab fa-linkedin-in footer-social-icon"></i></a>
+            </li>
+            <li class="footer-social-item">
+                <a href="" class="footer-social-link email-link">
+                    <i class="fas fa-envelope footer-social-icon"></i></a>
+            </li>
         </ul>
-      </nav>
-      <!-- Navegación footer -->
-      <ul class="footer-social-links">
-        <li class="footer-social-item">
-          <a href="" class="footer-social-link twitter-link">
-            <i class="fab fa-twitter footer-social-icon"></i></a>
-        </li>
-        <li class="footer-social-item">
-          <a href="" class="footer-social-link github-link">
-            <i class="fab fa-github-alt footer-social-icon"></i></a>
-        </li>
-        <li class="footer-social-item">
-          <a href="" class="footer-social-link linkedin-link">
-            <i class="fab fa-linkedin-in footer-social-icon"></i></a>
-        </li>
-        <li class="footer-social-item">
-          <a href="" class="footer-social-link email-link">
-            <i class="fas fa-envelope footer-social-icon"></i></a>
-        </li>
-      </ul>
-      Hecho con ❤️ por Ada
+        Hecho con ❤️ por Ada
     </footer>
 
 </body>

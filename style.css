@@ -4,6 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+
+/*--------------------------------
+        SETTINGS GENERALES
+----------------------------------*/
 
 * {
     
@@ -11,52 +16,72 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
+a:link {
+    color: #130817;
+  }
+  
+a:visited {    /*no me gusta que quede azul vistado */
+    color: #1F3B2C;
+  }
+
+a:hover {
+ 
+  }
 /*--------------------------------
         HEADER
 ----------------------------------*/
 header{
 
     display: flex;
-    flex-direction: row;
     background-color: #F5F3F5;
     justify-content: flex-end;
-    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
-    position: relative;
+    
 }
+a {
+    text-decoration: none;
+}
+
 .barra{
 
-    max-width: 70%;
-    padding: 10px;
+    padding: 0px;
     padding-right: 40px;
+
+/* Queria la barra mas finita */
 
 }
 ul {
 
     list-style-type: none;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-center;
 
 }
 
 .menu {
 
-    font-family: 'Josefin Slab', serif;
-    letter-spacing: 5px;
+    font-family: "Montserrat", serif;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     cursor: pointer;
 
 }
 
 .button {
 
-    background-color:#8EA367;
-    border-radius: 15px;
+    background-color:#8EA367 ;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 150px; /* queria que todos los botones midan lo mismo
+    independientemente del contenido */
+    text-align: center;
     border: 0;
     font-size: 1em;
-    color: #2e2e31;
+    box-shadow: 2px 2px 2px 1px #3d2b44;
+    
     
 }
 
@@ -106,7 +131,8 @@ ul {
 .nombre{
 
     color:#E580A4;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Mansalva', cursive;
+    font-size: 80px;
 
 }
 .descripcion{
@@ -116,11 +142,12 @@ ul {
     margin-top:10px;
 }
 
-.lo-que-hago{
-   max-width: 200px;
-   margin:0px;
-}
-
+.github{
+    max-width: 200px;
+    margin:0px;
+    text-align: center;
+ }
+ 
 
 .center {
     align-items: center;
@@ -147,14 +174,17 @@ img {
 ----------------------------------*/
 
 .seccion-misconocimientos {
-    justify-content: center;
-    background-color: #9F8270;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F3F5;
     height: auto;
 }
 .contenedor-conocimientos{
-    display: flex;
+    display:flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
 
 }
 
@@ -162,61 +192,73 @@ img {
 .titulo-mediano{
     text-align: center;
     color:#130817;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Mansalva', cursive;
     font-size: 50px;
-    
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 .contenedor-frase{
-    width: 450px;
+    display: flex;
+    justify-content: center;
+    width: 550px;
+   
 }
 .frase{
     text-align: center;
     color: #404518;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Montserrat", serif;
+    padding-bottom: 60px;
 }
+.linea{
+    text-align: center; 
+}
+.tarjeta  {
+    background-color: #130817;   
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    margin:15px;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.skill{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    color:#F5F3F5;
+}
+.imagen {
+    display: flex;
+    align-items: center;
+    
+}
+
 /*--------------------------------
         SECCIÓN CITA
 ----------------------------------*/
-.seccion-3 {
-    background-color: blue;
+
+.seccion-cita {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: #26474E;
     height: 400px;
 }
 
-.grande{
-    font-size: 1.2rem;
-    max-width: 800px;
-    padding: 150;
+.fa-quote-right{
+    width: 250px;
+    height: 250px;
 }
 
 
-.bloque{
-    text-align: center; 
-    background-color: crimson;
-}
 
-.tarjeta  {
-    background-color: azure;   
-    border: 2px solid gray;
-    width: 200px;
-    height: 200px;
-    padding: 10px; /* Almohadita alrrededor*/
-    margin: 10px; 
 
-    text-align: center;
-    box-sizing: border-box; /*La tarjeta no modifica
-     su tamaño - incluye adentro el borde y el padding
-     -No se lo adiciona a su tamaño*/
-    display: inline-block; /* Comportate 
-    como un elemento en linea */
-    
-}
-/*Las imagenes tienen su propio tamaño
-y su relacion de aspecto*/
-.imagen {
-    width: 130px;
-    height: 130px;
 
-}
+
+
+
 
 /*--------------------------------
         SECCIÓN PROYECTOS
@@ -282,3 +324,22 @@ h5{
 .beige{
     background-color:#D4BE7D;
 }
+
+
+
+
+/*--------------------------------
+        DISEÑO RESPONSIVE
+----------------------------------*/
+
+
+
+/*--------------------------------
+        TABLET
+----------------------------------*/
+
+
+
+/*--------------------------------
+        SMARTPHONE
+----------------------------------*/

@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 
 /*--------------------------------
-        SETTINGS GENERALES
+      🍓 SETTINGS GENERALES 🍓
 ----------------------------------*/
 
 * {
@@ -25,14 +25,19 @@ a:link {
   }
   
 a:visited {    /*no me gusta que quede azul vistado */
-    color: #1F3B2C;
+    color: #130817;
   }
 
 a:hover {
- 
+   color:#fb8806;
   }
+
+.img{
+    width: 100%;
+    height: auto;
+}
 /*--------------------------------
-        HEADER
+       🍓 HEADER  🍓
 ----------------------------------*/
 header{
 
@@ -46,47 +51,44 @@ a {
 }
 
 .barra{
+    display: flex;
+    margin: 25px; 
 
-    padding: 0px;
-    padding-right: 40px;
 
 /* Queria la barra mas finita */
 
 }
 ul {
-
-    list-style-type: none;
     display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    list-style-type: none;
 
-}
-
-.menu {
-
-    font-family: "Montserrat", serif;
-    margin: 10px;
-    padding: 10px;
-    cursor: pointer;
 
 }
 
 .button {
 
-    background-color:#8EA367 ;
-    border-radius: 20px;
+    font-family: "Montserrat", serif;
+    margin-right: 40px;
+
+}
+
+.recuadro {
+
     padding-left: 20px;
     padding-right: 20px;
-    width: 150px; /* queria que todos los botones midan lo mismo
-    independientemente del contenido */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 150px;
     text-align: center;
-    border: 0;
-    font-size: 1em;
-    box-shadow: 2px 2px 2px 1px #3d2b44;
-    
+    border: 2px solid black;
+
     
 }
 
 /*--------------------------------
-        SECCIÓN HOLA
+     🍓   SECCIÓN HOLA  🍓
 ----------------------------------*/
 
 .seccion-hola { 
@@ -170,7 +172,7 @@ img {
 
 
 /*--------------------------------
-        SECCIÓN CONOCIMIENTOS
+   🍓   SECCIÓN CONOCIMIENTOS  🍓
 ----------------------------------*/
 
 .seccion-misconocimientos {
@@ -234,7 +236,7 @@ img {
 }
 
 /*--------------------------------
-        SECCIÓN CITA
+    🍓    SECCIÓN CITA   🍓
 ----------------------------------*/
 
 .seccion-cita {
@@ -261,7 +263,7 @@ img {
 
 
 /*--------------------------------
-        SECCIÓN PROYECTOS
+     🍓  SECCIÓN PROYECTOS  🍓
 ----------------------------------*/
 .seccion-misproyectos {
     display: flex;
@@ -312,7 +314,7 @@ img {
 }
 
 /*--------------------------------
-        FOOTER
+     🍓    FOOTER    🍓
 ----------------------------------*/
 footer{
     background-color: #3f091c;
@@ -331,17 +333,17 @@ footer{
 
 
 /*--------------------------------
-        DISEÑO RESPONSIVE
+      🍓  DISEÑO RESPONSIVE  🍓
 ----------------------------------*/
 
 
 
 /*--------------------------------
-        TABLET
+     🍓     TABLET       🍓
 ----------------------------------*/
 
 
 
 /*--------------------------------
-        SMARTPHONE
+     🍓   SMARTPHONE    🍓
 ----------------------------------*/

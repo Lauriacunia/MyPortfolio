@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
 
@@ -31,6 +31,15 @@ a:visited {    /*no me gusta que quede azul vistado */
 a:hover {
    color:#dc143c;
   }
+
+.con-recuadro:hover{
+    background-color: #dc143c;
+    border:0px;
+
+}
+.texto-hover:hover{
+    color: #F5F3F5;   
+}
 
 img{
     width: 100%;
@@ -102,9 +111,9 @@ ul {
 
 .contenedor-hola {
 
-    background-color:#fff;
+    background-color:#ffffff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding:70px;
     margin-left: 60px;
     margin-right: 60px;
@@ -114,6 +123,7 @@ ul {
 .contenido-hola {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-top: 40px;
     margin-bottom: 40px;
     /*sin el display flex se veia igual, 
@@ -146,7 +156,7 @@ ul {
     display:flex;
     justify-content: center;
     align-items: center;
-    max-width: 50%;
+    max-width: 40%;
 }
 
 /*--------------------------------
@@ -216,26 +226,49 @@ ul {
 /*--------------------------------
     🍓    SECCIÓN CITA   🍓
 ----------------------------------*/
+.seccion-cita { 
+   
+    display: flex;
+    justify-content: center;
+    background-image: url("images/estacion2.png");
+    height: 800px;
 
-.seccion-cita {
+}
+.contenedor-cita {
+
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 500px;
-    background-color: #26474E;
-    height: 400px;
+    padding:70px;
+    
+}
+.cita{
+    display: flex;
+    justify-content: center;
+}
+.cita-texto{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color:#130817;
+    text-align: center;
+    margin-left:60px;  /*tecnicas rusticas para acomodar el texto a donde me gustaba*/
+    margin-bottom: 30px;
+}
+.firma{
+    display: flex;
+    justify-content: center;
+
 }
 
-.fa-quote-right{
-    width: 250px;
-    height: 250px;
+.cita-firma{
+
+    font-family: "Montserrat", serif;
+    font-size: 15px;
+    color:#dc143c;
+    text-align: center;
+    margin-left:60px;
 }
-
-
-
-
-
 
 
 

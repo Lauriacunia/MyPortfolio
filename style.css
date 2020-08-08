@@ -34,11 +34,16 @@ a:hover {
 
 .con-recuadro:hover{
     background-color: #dc143c;
+    color:white;
     border:0px;
 
 }
 .texto-hover:hover{
     color: #F5F3F5;   
+}
+
+.con-recuadro a {
+    color: inherit;
 }
 
 img{
@@ -65,7 +70,9 @@ header{
 a {
     text-decoration: none;
 }
-
+.texto-hover{
+    color:inherit; /*toma el color del antecesor*/
+}
 .barra{
     display: flex;
     margin: 20px; 

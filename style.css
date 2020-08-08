@@ -257,9 +257,9 @@ ul {
 .seccion-cita { 
    
     display: flex;
-    justify-content: center;
-    background-image: url("images/estacion2.png");
-    height: 800px;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 .contenedor-cita {
@@ -268,24 +268,30 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #dc143c;
     padding:70px;
-    
+    /*me gusta que sea angosto 
+    y que no ocupe todo el ancho*/
 }
 .cita{
     display: flex;
     justify-content: center;
+    align-items: center;
+    border:2px solid #F5F3F5;
+    padding: 40px;
+    margin:40px;
 }
 .cita-texto{
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    color:#130817;
+    font-size: 15px;
     text-align: center;
-    margin-left:60px;  /*tecnicas rusticas para acomodar el texto a donde me gustaba*/
-    margin-bottom: 30px;
+    color:#F5F3F5;
+    
 }
 .firma{
     display: flex;
     justify-content: center;
+   
 
 }
 
@@ -293,9 +299,9 @@ ul {
 
     font-family: "Montserrat", serif;
     font-size: 15px;
-    color:#dc143c;
+    color:#F5F3F5;
     text-align: center;
-    margin-left:60px;
+
 }
 
 

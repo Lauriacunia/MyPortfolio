@@ -35,7 +35,7 @@ a:hover {
 .con-recuadro:hover{
     background-color: #dc143c;
     color:white;
-    border:0px;
+    border:2px solid #dc143c;
 
 }
 .texto-hover:hover{
@@ -105,7 +105,7 @@ ul {
     padding-bottom: 10px;
     width: 150px;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid #130817;
 
     
 }
@@ -145,19 +145,19 @@ ul {
 .hola{
 
     font-family: "Montserrat", serif;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 
 .nombre{
-
-    color:#dc143c;
-    font-family: 'Euphoria Script', cursive;
-    font-size: 100px;
+    display: flex;
+    margin-bottom:20px;
+    
 
 }
 .descripcion{
     font-family: 'Work Sans', sans-serif;
+    color:#5c555f;
 }
  
 .mas-margin{
@@ -224,6 +224,8 @@ ul {
 .tarjeta  {
     display:flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     background-color: #130817;   
     width: 150px;
     height: 150px;

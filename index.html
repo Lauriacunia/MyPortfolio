@@ -78,7 +78,7 @@
             <div class="contenedor-frase">
                 <p class="frase">Sin el juego el aprendizaje y la evolución son imposibles.<br> El trabajo creativo es
                     juego, <br> es especulación libre usando los materiales<br> de la forma que cada uno elija.<br> La mente creativa
-                    juega con los objetos que ama...<br>y éstos son mis juguetes favoritos...</p>
+                    juega con los objetos que ama<br>y éstos son mis juguetes favoritos...</p>
             </div>
 
             <div class=contenedor-tarjetas>
@@ -237,49 +237,90 @@
                 <h2 class="titulo-mediano">Mis proyectos</h2>
             </div>
             
-            <nav>
-                <div class="filtros">
-                    <ul>
-                        <li class="menu button recuadro con-recuadro ">Todos</li>
-                        <li class="menu button">HTML/CSS</li>
-                        <li class="menu button">JavaScript</li>
-                        <li class="menu button">React</li>
-                        <li class="menu button">Java</li>
-                    </ul>
-                </div>
+            <nav class="barra">
+
+                <ul>
+                    <li class="button recuadro con-recuadro "><a class= "texto-hover" href="https://github.com/Lauriacunia"> TODOS </a></li>
+                    <li class="button"><a href="">HTML/CSS</a></li>
+                    <li class="button"><a href="">Javascrip</a></li>
+                    <li class="button"><a href="">Java-API</a></li>
+
+                    <!--LES DEJE EL ENLACE PORQUE SINO NO FUNCIONABA EL HOVER-->
+                </ul>
             </nav>
 
 
             <div class="imagenes-proyectos">
 
                 <div class="proyecto">
-                    <img class="imagen" src="images/clip-woman-resting-on-nature-1" />
-                    <p class="skill">Portfolio</p>
+                    <div class="imagen-proyecto">
+                        <img src="images/portfolio.png" />
+                    </div>
+                    <div  class="contenedor-titulo">
+                        <p class="titulo">Portfolio</p>
+                    </div>
+                    
                 </div>
                 
                 <div class="proyecto">
-                    <img class="imagen" src="images/clip-online-shopping-3.png" />
-                    <p class="skill">Tienda</p>
+                    <div class="imagen-proyecto">
+                        <img src="images/tienda.png" />
+                    </div>
+                    
+                    <div class="contenedor-titulo">
+                        <p class="titulo">Tienda</p>
+                    </div>
+                    
                 </div>
                 <div class="proyecto">
-                    <img class="imagen" src="images/pluto-67.png" />
-                    <p class="skill">Juego de la Memoria</p>
+                    <div class="imagen-proyecto">
+                        <img src="images/game.png" />
+                    </div>
+                    
+                    <div class="contenedor-titulo">
+                        <p class="titulo">Juego de la Memoria</p>
+                    </div>
+                    
                 </div>
                 <div class="proyecto">
-                    <img class="imagen" src="images/lime-delivery-2.png" />
-                    <p class="skill">Controlador de Gastos</p>
+                    <div class="imagen-proyecto">
+                        <img src="images/gastos.png" />
+                    </div>
+                    
+                    <div class="contenedor-titulo">
+                        <p class="titulo">Controlador de Gastos</p>
+                    </div>
+                    
                 </div>
                 <div class="proyecto">
-                    <img class="imagen" src="images/pluto-coming-soon-1.png" />
-                    <p class="skill">Administrador de Reuniones</p>
+                    <div class="imagen-proyecto">
+                        <img src="images/citas.png" />
+                    </div>
+                    
+                    <div class="contenedor-titulo">
+                        <p class="titulo">Administrador de Reuniones</p>
+                    </div>
+                    
                 </div>
                 <div class="proyecto">
-                    <img class="imagen" src="images/pablita-social-network-1.png" />
-                    <p class="skill">Todo APP</p>
+                    <div class="imagen-proyecto">
+                        <img src="images/app.png" />
+                    </div>
+                    
+                    <div class="contenedor-titulo">
+                        <p class="titulo">Todo APP</p>
+                    </div>
+                    
                 </div>
                 <div class="proyecto">
-                    <img class="imagen" src="images/pablita-cinema.png" />
-                    <p class="skill">Buscador de peliculas</p>
+                    <div class="imagen-proyecto">
+                        <img src="images/peli.png" />
+                    </div>
+                    
+                    <div class="contenedor-titulo">
+                        <p class="titulo">Buscador de peliculas</p> 
+                    </div>
+                    
                 </div>
 
             </div>
@@ -295,12 +336,12 @@
     <footer id="contacto"> 
 
         <nav class="barra">
-                <ul>
-                    <li class="menu"><a href="#hola">HOLA</a></li>
-                    <li class="menu"><a href="#conocimientos">CONOCIMIENTOS</a></li>
-                    <li class="menu"><a href="#proyectos">PROYECTOS</a></li>
-                    <li class="menu button"><a href="#contacto"> CONTACTO </a></li>
-                </ul>
+            <ul>
+                <li class="button"><a href="#hola">HOLA</a></li>
+                <li class="button"><a href="#conocimientos">CONOCIMIENTOS</a></li>
+                <li class="button"><a href="#proyectos">PROYECTOS</a></li>
+                <li class="button recuadro con-recuadro "><a class= "texto-hover" href="#contacto"> CONTACTO </a></li>
+            </ul>
         </nav>
 
         <div class="iconos-contacto">

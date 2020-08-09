@@ -73,14 +73,14 @@ a {
 .texto-hover{
     color:inherit; /*toma el color del antecesor*/
 }
+
 .barra{
     display: flex;
     margin: 20px; 
 
-
 /* Queria la barra mas finita */
-
 }
+
 ul {
     display: flex;
     justify-content: space-around; 
@@ -379,7 +379,7 @@ ul {
      🍓    FOOTER    🍓
 ----------------------------------*/
 footer{
-    background-color: #3f091c;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -388,11 +388,22 @@ footer{
 
 .iconos-contacto{
     Display:flex;
-    justify-content: center;
-
+    align-items: center;
+    margin-bottom: 50px;
 }
 
-
+.links-contacto{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #dc143c;
+    width: 40px;
+    height: auto;
+    margin:30px;
+}
+.icono-footer{
+    font-size: 25px;
+}
 
 /*--------------------------------
       🍓  DISEÑO RESPONSIVE  🍓

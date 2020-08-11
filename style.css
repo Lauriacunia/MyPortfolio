@@ -55,6 +55,7 @@ i{
     width: 100%;
     height: auto;
 }
+
 body{
     background-color:#F5F3F5;
 }
@@ -70,6 +71,10 @@ header{
 a {
     text-decoration: none;
 }
+.hamburguesa{
+    display:none;
+}
+
 .texto-hover{
     color:inherit; /*toma el color del antecesor*/
 }
@@ -83,12 +88,12 @@ a {
 
 ul {
     display: flex;
-    justify-content: space-around; 
     align-items: center;
     list-style-type: none;
 
 
 }
+
 
 .button {
 
@@ -118,6 +123,7 @@ ul {
    
     display: flex;
     justify-content: center;
+    
 
 }
 
@@ -156,12 +162,14 @@ ul {
 
 }
 .descripcion{
+    display:flex;
     font-family: 'Work Sans', sans-serif;
     color:#5c555f;
 }
  
 .mas-margin{
     margin-top: 60px;
+    justify-content: center;
 }
 
 .imagen-hola{
@@ -378,12 +386,12 @@ ul {
 /*--------------------------------
      🍓    FOOTER    🍓
 ----------------------------------*/
-footer{
+.contenedor-footer{
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:40px;
+    padding:20px;
 }
 
 .iconos-contacto{
@@ -404,6 +412,14 @@ footer{
 .icono-footer{
     font-size: 25px;
 }
+.imagen-final{
+    width: 50px;
+    height: auto;
+}
+.imagen-contacto{
+    width: 350px;
+    
+}
 
 /*--------------------------------
       🍓  DISEÑO RESPONSIVE  🍓
@@ -414,9 +430,98 @@ footer{
 /*--------------------------------
      🍓     TABLET       🍓
 ----------------------------------*/
+@media (min-width: 600px) and (max-width:900px){
 
+    /* Seccion Header*/
+    ul{
+        display:none;
+    }
+
+    .hamburguesa{
+        display:block;
+        justify-content: left;
+        color:#dc143c;
+        font-size: 35px;
+        margin:20px;
+
+    }
+
+    /*Seccion Hola*/
+
+    .contenedor-hola {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    }
+    
+    .contenido-hola {
+    align-items: center;
+
+    }
+
+    .descripcion{
+        text-align: center;
+    }
+
+    .button{
+        margin-right: 0px;
+    }
+
+
+    /*Seccion Mis conocimientos*/
+
+    .tarjeta {
+        width: 90px;
+        height: 90px;
+        padding: 20px;
+        margin: 5px;
+
+    }
+
+}
 
 
 /*--------------------------------
      🍓   SMARTPHONE    🍓
 ----------------------------------*/
+
+@media (max-width:600px){
+    ul{
+        display:none;
+    }
+    .contenedor-hola {
+        flex-direction: column-reverse;
+        align-items: center;
+    
+        }
+
+    .contenido-hola {
+            align-items: center;
+        
+        }
+    .descripcion{
+            text-align: center;
+        }
+    
+    .button{
+            margin-right: 0px;
+        }
+    .hamburguesa{
+            display:block;
+            justify-content: left;
+            color:#dc143c;
+            font-size: 25px;
+            margin:20px;
+    
+        }
+
+        /*Seccion Mis conocimientos*/
+
+        .tarjeta {
+            width: 70px;
+            height: 70px;
+            padding: 10px;
+            margin: 2px;
+    
+        }    
+}

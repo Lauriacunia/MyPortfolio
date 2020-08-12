@@ -266,6 +266,8 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+   
+    
 
 
 }
@@ -277,6 +279,8 @@ ul {
     justify-content: center;
     background-color: #dc143c;
     padding:70px;
+    color:#F5F3F5;
+    width:90%;
     /*me gusta que sea angosto 
     y que no ocupe todo el ancho*/
 }
@@ -626,18 +630,24 @@ ul {
 
     /*Seccion cita*/
 
-
+    .contenedor-cita{
+        padding: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     .cita-texto{
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .cita-firma{
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .cita{
         padding:10px;
         margin:10px;
     }
+
+    /*Seccion mis proyectos*/
     
 }

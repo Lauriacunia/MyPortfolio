@@ -28,6 +28,14 @@ a:visited {    /*no me gusta que quede azul vistado */
     color: #130817;
   }
 
+a links-contacto:link {
+    color: #F5F3F5;
+  }
+  
+a links-contacto:visited {    /*no me gusta que quede azul vistado */
+    color: #F5F3F5;
+  }
+
 a:hover {
    color:#dc143c;
   }
@@ -387,30 +395,35 @@ ul {
      🍓    FOOTER    🍓
 ----------------------------------*/
 .contenedor-footer{
-    background-color: #ffffff;
+    background-color: #dc143c;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:20px;
+    padding:30px;
 }
+.button-footer{
+    color:#F5F3F5;
+    margin:20px;
 
+}
 .iconos-contacto{
     Display:flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .links-contacto{
     display:flex;
     align-items: center;
     justify-content: center;
-    color: #dc143c;
+    color: #F5F3F5;
     width: 40px;
     height: auto;
     margin:30px;
 }
 .icono-footer{
     font-size: 25px;
+    
 }
 .imagen-final{
     width: 50px;

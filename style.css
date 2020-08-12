@@ -28,17 +28,34 @@ a:visited {    /*no me gusta que quede azul vistado */
     color: #130817;
   }
 
-a links-contacto:link {
-    color: #F5F3F5;
-  }
-  
-a links-contacto:visited {    /*no me gusta que quede azul vistado */
+a:hover {
+    color:#dc143c;
+   }
+
+.links-contacto a:link {
     color: #F5F3F5;
   }
 
-a:hover {
-   color:#dc143c;
+.links-contacto a:visited {    /*no me gusta que quede azul vistado */
+    color: #F5F3F5;
   }
+
+.links-contacto a:hover {
+    color:#130817;
+   }
+
+.barra-footer a:link {
+    color: #F5F3F5;
+  }
+
+.barra-footer a:visited  {
+    color: #F5F3F5;
+  }
+
+.barra-footer a:hover {
+    color: #130817;
+  }
+
 
 .con-recuadro:hover{
     background-color: #dc143c;
@@ -433,6 +450,8 @@ ul {
     width: 350px;
     
 }
+
+
 
 /*--------------------------------
       🍓  DISEÑO RESPONSIVE  🍓

@@ -192,10 +192,10 @@ ul {
  
 }
 .contenedor-conocimientos{
-    background-color:#ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #ffffff;
     margin-left: 150px;
     margin-right: 150px;
 
@@ -230,11 +230,11 @@ ul {
     max-width: 1300px;
 }
 .tarjeta  {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    background-color: #130817;   
+    justify-content: space-around;
+    background-color: #130817;     
     width: 150px;
     height: 150px;
     padding: 30px;
@@ -245,6 +245,8 @@ ul {
     display: flex;
     justify-content: center;
     padding: 5px;
+    color:#F5F3F5;
+    font-size: 80px;
 }
 
 .skill{
@@ -254,11 +256,7 @@ ul {
     margin: 10px;
     color:#F5F3F5;
 }
-.icono{
-    color:#F5F3F5;
-    font-size: 80px;
-    
-}
+
 
 /*--------------------------------
     🍓    SECCIÓN CITA   🍓
@@ -470,14 +468,38 @@ ul {
 
     /*Seccion Mis conocimientos*/
 
+    .seccion-misconocimientos {
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+    }
+    .contenedor-conocimientos{
+        width: 80vw;
+    }
+
+    .titulo-mediano{
+        font-size: 30px;
+    }
+
+    .contenedor-frase{
+        width: 430px;
+    }
+
+    .frase{
+        font-size:15px;
+    }
+
     .tarjeta {
-        width: 90px;
-        height: 90px;
+        width: 120px;
+        height: 120px;
         padding: 20px;
         margin: 5px;
 
     }
-
+    .contenedor-icono{
+        
+        font-size: 60px;
+    }
 }
 
 
@@ -488,6 +510,15 @@ ul {
 @media (max-width:600px){
     ul{
         display:none;
+    }
+    .hola{
+        font-size: 15px;
+       
+    }
+
+    .descripcion{
+
+        font-size: 8px;  
     }
     .contenedor-hola {
         flex-direction: column-reverse;
@@ -515,13 +546,57 @@ ul {
     
         }
 
-        /*Seccion Mis conocimientos*/
+    /*Seccion Mis conocimientos*/
 
-        .tarjeta {
-            width: 70px;
-            height: 70px;
-            padding: 10px;
-            margin: 2px;
+    .seccion-misconocimientos {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+
+    .contenedor-conocimientos{
+        width: 80vw;
+    }
+
+
+    .titulo-mediano{
+            font-size: 20px;
+    }
+
+    .contenedor-frase{
+        width: 300px;
+    }
+
+    .frase{
+        font-size:9px;
+    }
+    .tarjeta {
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            margin: 5px;
     
-        }    
+        }
+    .contenedor-icono{
+            
+            font-size: 30px;
+        }
+
+    /*Seccion cita*/
+
+
+    .cita-texto{
+        font-size: 8px;
+    }
+
+    .cita-firma{
+        font-size: 8px;
+    }
+
+    .cita{
+        padding:10px;
+        margin:10px;
+    }
+    
 }

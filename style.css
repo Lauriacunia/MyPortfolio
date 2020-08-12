@@ -518,7 +518,7 @@ ul {
         justify-content: left;
         color:#dc143c;
         font-size: 25px;
-        margin:20px;
+        margin:10px;
 
     }
 
@@ -587,15 +587,24 @@ ul {
 
     .titulo-mediano{
             font-size: 20px;
+            padding-top: 30px;
+            padding-bottom: 30px;
     }
 
     .contenedor-frase{
         width: 300px;
+        height: auto;
+        padding-bottom: 0px;
     }
 
     .frase{
         font-size:9px;
+        padding-bottom: 25px;
     }
+    .contenedor-tarjetas{
+        margin-bottom: 20px;
+    }
+
     .tarjeta {
             width: 100px;
             height: 100px;
@@ -603,9 +612,16 @@ ul {
             margin: 5px;
     
         }
+    .skill {
+            
+            margin: 5px;
+            font-size: 10px;
+        }
+
     .contenedor-icono{
             
-            font-size: 30px;
+            font-size: 35px;
+            padding: 10px;
         }
 
     /*Seccion cita*/

@@ -383,7 +383,7 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: #dc143c;   
+    background-color: #130817;   
     width: 300px;
     height: 250px;
     padding: 15px;
@@ -688,7 +688,7 @@ ul {
         display:none;
     }
     .proyecto {
-        background-color: #dc143c;
+        background-color: #130817;
         width: 200px;
         height: 150px;
         padding:10px;
@@ -705,5 +705,31 @@ ul {
     }
     .titulo{
         font-size: 12px;
+    }
+    .contenedor-tarjetas-proyectos{
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    }
+
+    /*Seccion Footer*/
+  
+    .contenedor-footer{
+        padding:15px;
+    }
+    .barra-footer{
+        display:none;
+    }
+    .imagen-contacto{
+        width: 200px;
+        height: auto;
+    }
+    .iconos-contacto{
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    .links-contacto{
+        width: 50px;
+        height: auto;
+        margin:5px;
     }
 }

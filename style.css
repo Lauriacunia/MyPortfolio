@@ -343,22 +343,23 @@ ul {
 ----------------------------------*/
 .seccion-misproyectos {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-top: 100px;
-    margin-bottom: 100px;
-
-    
+    margin-bottom: 100px;  
     
 }
+
+.barra-proyectos{
+    display: flex;
+    margin: 20px; 
+}
+
 .contenedor-misproyectos{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #ffffff;
     width: 90%;
-  
     
 }
 .filtros{
@@ -382,7 +383,7 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: #130817;   
+    background-color: #dc143c;   
     width: 300px;
     height: 250px;
     padding: 15px;
@@ -571,8 +572,7 @@ ul {
         flex-direction: column-reverse;
         align-items: center;
         padding:20px;
-        margin-left: 20px;
-        margin-right: 20px;
+     
     
         }
 
@@ -612,10 +612,8 @@ ul {
         margin-bottom: 30px;
 
     }
-
-
-    .contenedor-conocimientos{
-        width: 80vw;
+    .contenedor-frase{
+        display:none;
     }
 
 
@@ -636,7 +634,7 @@ ul {
         padding-bottom: 25px;
     }
     .contenedor-tarjetas{
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 
     .tarjeta {
@@ -679,5 +677,33 @@ ul {
     }
 
     /*Seccion mis proyectos*/
-    
+
+    .seccion-misproyectos {
+       
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .barra-proyectos{
+        display:none;
+    }
+    .proyecto {
+        background-color: #dc143c;
+        width: 200px;
+        height: 150px;
+        padding:10px;
+        margin:5px;
+    }
+    .imagen-proyecto{
+        width: 100px;
+        height: auto;
+        margin:0px;
+    }
+    .contenedor-titulo{
+        margin-bottom: 5px;
+        margin-top:5px;
+    }
+    .titulo{
+        font-size: 12px;
+    }
 }

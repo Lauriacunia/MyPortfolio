@@ -1,4 +1,7 @@
-
+/* Aqui estas importando la fuente Euphoria, que nunca usas. Si bien no lo comentamos en clase, 
+sí te cuento que los imports tienen algún peso importante, ya que son recursos que CSS debe traer 
+de otra web antes de poder cargarse. Una tipografía que se importa pero no se utiliza es un malgasto 
+de la conexión del usuario, y puede afectar negativamente el tiempo de carga de la web.  */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -19,6 +22,9 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Dado que estos estilos son iguales, deberiamos ponerlos separados por coma:
+a:link, a:visited {. Misma observación para el resto de los a: */
+
 a:link {
     color: #130817;
   }
@@ -30,6 +36,11 @@ a:visited {    /*no me gusta que quede azul vistado */
 a:hover {
     color:#dc143c;
    }
+
+   /* Links-contacto y barra-footer tienen el mismo estilado. No tiene sentido
+   entonces que sean clases distintas: deberian ser la misma con un nombre mas descriptivo.
+   Barra footer en particular no es un buen nombre (parece referirse al contenedor de los links, 
+   y no a los links en sí. Yo le pondria "links-contacto" a todos  */
 
 .links-contacto a:link {
     color: #F5F3F5;
@@ -75,10 +86,15 @@ img{
     height: auto;
 }
 
+/* Los elementos <i> no tienen width ya que son elementos decorativos, similar a los elementos en linea.
+Fijate que podemos eliminar su estilado sin ninguna consecuencia en la web  */
 i{
     width: 100%;
     height: auto;
 }
+/* 
+Intenta siempre que tu CSS se lea en el mismo orden que tu HTML: el body tendria que ir mas arriba, 
+debajo de html  */
 
 body{
     background-color:#F5F3F5;
@@ -92,6 +108,8 @@ header{
     justify-content: flex-end;
     
 }
+
+/* Este estilado deberia ir mas arriba, en estilos generales */
 a {
     text-decoration: none;
 }
@@ -103,6 +121,9 @@ a {
     color:inherit; /*toma el color del antecesor*/
 }
 
+/* En que sentido querias la barra "mas finita"? Margin la separa de sus bordes - dandole un espaciado
+entre el comienzo de la web y la siguiente seccion. Display flex en este caso no hace nada, 
+ya que /barra tiene un solo hijo, ul.  */
 .barra{
     display: flex;
     margin: 20px; 
@@ -128,6 +149,7 @@ ul {
 
 .recuadro {
 
+    /* Podemos resumir estas cuatro ordenes de padding en una, asi: padding: 10px 20px; */
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -179,12 +201,14 @@ ul {
 }
 
 .nombre{
+    /* No es necesario display: flex aqui */
     display: flex;
     margin-bottom:20px;
     
 
 }
 .descripcion{
+        /* No es necesario display: flex aqui */
     display:flex;
     font-family: 'Work Sans', sans-serif;
     color:#5c555f;
@@ -192,10 +216,12 @@ ul {
  
 .mas-margin{
     margin-top: 60px;
+/* No es necesario justify-content: center; aqui: no estamos usando flex en este elemento */
     justify-content: center;
 }
 
 .imagen-hola{
+            /* No es necesario display: flex aqui */
     display:flex;
     justify-content: center;
     align-items: center;
@@ -206,6 +232,9 @@ ul {
    🍓   SECCIÓN CONOCIMIENTOS  🍓
 ----------------------------------*/
 
+
+/* Fijate que las secciones mis conocimientos y tarjetas son iguales desde el punto de vista del estilado
+Podrian tener el mismo nombre de clase. Por ejemplo, es habitual separar entre secciones principales y secundarias */
 .seccion-misconocimientos {
     display: flex;
     justify-content: center;
@@ -259,6 +288,8 @@ ul {
     background-color: #130817;     
     width: 150px;
     height: 150px;
+    /* Fijate que este padding es excesivo: tanto el icono como el texto estan rebalsando. 
+    Se veria igual con un padding de 15px por ejemplo */
     padding: 30px;
     margin:15px;
     
@@ -303,6 +334,9 @@ ul {
     /*me gusta que sea angosto 
     y que no ocupe todo el ancho*/
 }
+
+/* Seria preferible que el espaciado vertical en esta seccion este hecho por flex con align items
+y no con margin.  */
 .cita{
     display: flex;
     justify-content: center;
@@ -396,6 +430,7 @@ ul {
     margin-bottom: 15px;
 }
 
+/* Ni display flex ni justify content ni height son necesarios aqui */
 .imagen-proyecto{
     display:flex;
     justify-content: center;
@@ -424,6 +459,7 @@ ul {
 
 }
 .iconos-contacto{
+    /* cuidado con las mayusculas: pueden generar problemas en algunos navegadores */
     Display:flex;
     align-items: center;
     margin-bottom: 30px;
@@ -442,6 +478,8 @@ ul {
     font-size: 25px;
     
 }
+
+/* este elemento no existe en tu html */
 .imagen-final{
     width: 50px;
     height: auto;
@@ -471,9 +509,12 @@ ul {
 
     .hamburguesa{
         display:block;
+        /* justify-content no aplica aqui ya que hamburguesa no es flex sino block */
         justify-content: left;
         color:#dc143c;
         font-size: 35px;
+        /* fijate que por este margin tu icono se ve algo corrido respecto a la seccion que sigue, 
+        yo le daria margin top y bottom pero no a la izquierda o a la derecha */
         margin:20px;
 
     }
@@ -481,6 +522,7 @@ ul {
     /*Seccion Hola*/
 
     .contenedor-hola {
+        /* buen uso de reverse aqui */
     flex-direction: column-reverse;
     align-items: center;
 
@@ -491,6 +533,7 @@ ul {
 
     }
 
+    /* no es necesario esto */
     .descripcion{
         text-align: center;
     }
@@ -526,6 +569,7 @@ ul {
     .tarjeta {
         width: 120px;
         height: 120px;
+        /* este padding es innecesario */
         padding: 20px;
         margin: 5px;
 
@@ -547,6 +591,7 @@ ul {
     ul{
         display:none;
     }
+    /* mismas observaciones que en tablet */
     .hamburguesa{
         display:block;
         justify-content: left;
@@ -590,6 +635,7 @@ ul {
 
     .recuadro {
             padding-left: 10px;
+            /* aqui tenes un error y este padding no se esta aplicando */
             padding-right: 10x;
             padding-top: 5px;
             padding-bottom: 5px;

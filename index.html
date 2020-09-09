@@ -18,6 +18,10 @@
     <!--*******************************-->
 
     <header>
+        <!-- Privilegiamos nombres descriptivos en un sentido funcional para las clases: 
+        "hamburguesa" puede ser una descripción visual de lo que se ve en el elemento,
+        pero no describe adecuadamente la *función* de este elemento en nuestra web. 
+        icono-menu o menu-mobile, por ejemplo, cumplen mejor este requerimiento.   -->
         <div class= "hamburguesa">
             <i class="fas fa-bars"></i>
         </div>
@@ -26,6 +30,12 @@
                 <li class="button"><a href="#hola">HOLA</a></li>
                 <li class="button"><a href="#conocimientos">CONOCIMIENTOS</a></li>
                 <li class="button"><a href="#proyectos">PROYECTOS</a></li>
+
+                <!-- Aqui distinguis entre dos clases (recuadro y con-recuadro) pero nunca las usas separadas. 
+                No creo que tenga sentido hacer dos clases: todos los estilos debieran estar en 
+                recuadro o en con-recuadro y mantener solo una. 
+                Por otro lado, el nombre no es apropiado, ya que no es descriptivo en sentido funcional.
+                Lo mismo ocurre con texto-hover  -->
                 <li class="button recuadro con-recuadro "><a class= "texto-hover" href="#contacto"> CONTACTO </a></li>
             </ul>
         </nav>
@@ -54,6 +64,14 @@
                     </div>
 
                     <div class="mas-margin">
+
+                        <!-- Cuando una línea del código tiene más de 80 ó 100 caracteres, 
+                        preferimos hacer un salto de línea para facilitar la legibilidad. 
+                        En este caso, diríamos:
+                        <p class="button recuadro con-recuadro">
+                            <a href="https://github.com/Lauriacunia">MI GITHUB</a>
+                        </p> -->
+
                         <p class="button recuadro con-recuadro"><a href="https://github.com/Lauriacunia">MI GITHUB</a></p>
                     </div>
                     
@@ -80,13 +98,29 @@
             </div>
 
             <div class="contenedor-frase">
+
+                <!-- No se recomienda usar <br> prácticamente nunca. En este caso en particular, 
+                estamos usando <br> para estilar el contenido, violando la regla de separación 
+                de responsabilidades entre CSS y HTML. 
+                CSS debe ser el único encargado de estilar nuestra web. 
+                En este caso, por ejemplo, podríamos poner cada línea dentro de un <span> y decirle en el 
+                CSS a .frase: display: flex; flex-direction: column;. 
+                De esta manera nos aseguramos de que el HTML sólo de estructura, y el CSS el estilado -->
+
                 <p class="frase">Sin el juego el aprendizaje y la evolución son imposibles.<br> El trabajo creativo es
                     juego, <br> es especulación libre usando los materiales<br> de la forma que cada uno elija.<br> La mente creativa
                     juega con los objetos que ama<br>y éstos son mis juguetes favoritos...</p>
             </div>
 
+            <!-- Aqui olvidaste las comillas. Cuidado con eso. Si bien las comillas son opcionales en HTML5, 
+                se recomienda siempre usarlas - por compatibilidad con versiones anteriores de HTML, por
+                legibilidad, por convención para mantener el código consistente entre distintos devs 
+                y por mayor portabilidad en caso de que vayas a exportar este HTML a otras tecnologías.   -->
             <div class=contenedor-tarjetas>
 
+                <!-- Tarjeta no es un mal nombre, pero teniendo en cuenta que tenes dos tipos de tarjetas en tu web, 
+                ambos muy distintos, yo privilegiaria ser aun mas clara, incluso con el riesgo de ser redundante:
+                "tarjeta-skills", por ejemplo.  -->
                 <div class="tarjeta">
 
                     <div class="contenedor-icono">
@@ -211,11 +245,13 @@
     <section class="seccion-cita">
 
         <div class="contenedor-cita">
+            <!-- Cuidado con olvidar las comillas en los atributos -->
             <div class=contenedor-comillas>
                 <i class="fas fa-quote-right "></i>
             </div>
 
             <div class="cita">
+                <!-- Vuelvo a mencionar la importancia de no usar <br> para estilar -->
                 <p class="cita-texto"> Se trata de hacer posible lo imposible, 
                     <br> lo posible hacerlo fácil, <br> y lo fácil bello.
                 </p>
@@ -247,9 +283,14 @@
                 <ul>
                     <li class="button recuadro con-recuadro "><a class= "texto-hover" href="https://github.com/Lauriacunia"> TODOS </a></li>
                     <li class="button"><a href="">HTML/CSS</a></li>
+                    <!-- Cuidado! es Javascript. Especialmente en un portfolio, es muy importante
+                    siempre escribir bien las tecnologias -->
                     <li class="button"><a href="">Javascrip</a></li>
                     <li class="button"><a href="">Java-API</a></li>
 
+
+                    <!-- Respondiendo al comentario de mas abajo: hiciste bien, ya que los estilos de a se aplican
+                    solo si hay un href.  -->
                     <!--LES DEJE EL ENLACE PORQUE SINO NO FUNCIONABA EL HOVER-->
                 </ul>
             </nav>
@@ -357,7 +398,10 @@
     
             <div class="iconos-contacto">
           
+                <!-- En toda esta seccion olvidaste las comillas en los atributos -->
                 <div class=links-contacto>
+                    <!-- Intenta agregar saltos de linea cuando tenes un scroll horizontal en VSCode:
+                    normalmente, por convención, esto se hace a los 80 ó 100 caracteres -->
                     <a href="https://www.linkedin.com/in/lauriacunia/"><i class="fab fa-linkedin icono-footer"></i></a>
                 </div>
     

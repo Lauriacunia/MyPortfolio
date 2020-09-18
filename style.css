@@ -37,9 +37,9 @@ a:hover {
     color:#dc143c;
    }
 
-   /* Links-contacto y barra-footer tienen el mismo estilado. No tiene sentido
+   /* Links-contacto y header-navbar-footer tienen el mismo estilado. No tiene sentido
    entonces que sean clases distintas: deberian ser la misma con un nombre mas descriptivo.
-   Barra footer en particular no es un buen nombre (parece referirse al contenedor de los links, 
+   header-navbar footer en particular no es un buen nombre (parece referirse al contenedor de los links, 
    y no a los links en sí. Yo le pondria "links-contacto" a todos  */
 
 .links-contacto a:link {
@@ -54,32 +54,33 @@ a:hover {
     color:#130817;
    }
 
-.barra-footer a:link {
+.header-navbar-footer a:link {
     color: #F5F3F5;
   }
 
-.barra-footer a:visited  {
+.header-navbar-footer a:visited  {
     color: #F5F3F5;
   }
 
-.barra-footer a:hover {
+.header-navbar-footer a:hover {
     color: #130817;
   }
 
 
-.con-recuadro:hover{
+.theme-link:hover{
     background-color: #dc143c;
     color:white;
     border:2px solid #dc143c;
-
 }
+.theme-link a {
+    color: inherit;
+}
+
 .texto-hover:hover{
     color: #F5F3F5;   
 }
 
-.con-recuadro a {
-    color: inherit;
-}
+
 
 img{
     width: 100%;
@@ -113,7 +114,7 @@ header{
 a {
     text-decoration: none;
 }
-.hamburguesa{
+.menu-responsive-icon{
     display:none;
 }
 
@@ -121,15 +122,17 @@ a {
     color:inherit; /*toma el color del antecesor*/
 }
 
-/* En que sentido querias la barra "mas finita"? Margin la separa de sus bordes - dandole un espaciado
+/* En que sentido querias la header-navbar "mas finita"? Margin la separa de sus bordes - dandole un espaciado
 entre el comienzo de la web y la siguiente seccion. Display flex en este caso no hace nada, 
-ya que /barra tiene un solo hijo, ul.  */
-.barra{
+ya que /header-navbar tiene un solo hijo, ul.  */
+.header-navbar{
     display: flex;
     margin: 20px; 
 
-/* Queria la barra mas finita */
+/* Queria la header-navbar mas finita */
 }
+
+
 
 ul {
     display: flex;
@@ -140,14 +143,14 @@ ul {
 }
 
 
-.button {
+.header-navbar-link {
 
     font-family: 'Work Sans', sans-serif;
     margin-right: 40px;
 
 }
 
-.recuadro {
+.theme-link {
 
     /* Podemos resumir estas cuatro ordenes de padding en una, asi: padding: 10px 20px; */
     padding-left: 20px;
@@ -382,7 +385,7 @@ y no con margin.  */
     
 }
 
-.barra-proyectos{
+.header-navbar-proyectos{
     display: flex;
     margin: 20px; 
 }
@@ -453,7 +456,7 @@ y no con margin.  */
     align-items: center;
     padding:30px;
 }
-.button-footer{
+.header-navbar-link-footer{
     color:#F5F3F5;
     margin:20px;
 
@@ -503,13 +506,11 @@ y no con margin.  */
 @media (min-width: 600px) and (max-width:900px){
 
     /* Seccion Header*/
-    ul{
-        display:none;
-    }
+    
 
-    .hamburguesa{
+    .menu-responsive-icon{
         display:block;
-        /* justify-content no aplica aqui ya que hamburguesa no es flex sino block */
+        /* justify-content no aplica aqui ya que menu-responsive-icon no es flex sino block */
         justify-content: left;
         color:#dc143c;
         font-size: 35px;
@@ -518,7 +519,14 @@ y no con margin.  */
         margin:20px;
 
     }
+    .hidde-menu-header{
+        display:none;
+    }
 
+    .header-navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     /*Seccion Hola*/
 
     .contenedor-hola {
@@ -538,7 +546,7 @@ y no con margin.  */
         text-align: center;
     }
 
-    .button{
+    .header-navbar-link{
         margin-right: 0px;
     }
 
@@ -588,11 +596,9 @@ y no con margin.  */
 @media (max-width:600px){
     
     /*Header */
-    ul{
-        display:none;
-    }
+  
     /* mismas observaciones que en tablet */
-    .hamburguesa{
+    .menu-responsive-icon{
         display:block;
         justify-content: left;
         color:#dc143c;
@@ -629,11 +635,11 @@ y no con margin.  */
             text-align: center;
         }
     
-    .button{
+    .header-navbar-link{
             margin-right: 0px;
         }
 
-    .recuadro {
+    .theme-link {
             padding-left: 10px;
             /* aqui tenes un error y este padding no se esta aplicando */
             padding-right: 10x;
@@ -729,7 +735,7 @@ y no con margin.  */
         margin-bottom: 30px;
     }
 
-    .barra-proyectos{
+    .header-navbar-proyectos{
         display:none;
     }
     .proyecto {
@@ -761,7 +767,7 @@ y no con margin.  */
     .contenedor-footer{
         padding:15px;
     }
-    .barra-footer{
+    .header-navbar-footer{
         display:none;
     }
     .imagen-contacto{

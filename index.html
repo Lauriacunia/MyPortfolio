@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Laurita</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
@@ -13,37 +13,35 @@
 
 <body>
 
-    <!--********************************-->
-    <!--       🙈  HEADER    🙈         -->
-    <!--*******************************-->
+    <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+    <!--                                INICIO  HEADER                                      -->
+    <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
 
     <header>
-        <!-- Privilegiamos nombres descriptivos en un sentido funcional para las clases: 
-        "hamburguesa" puede ser una descripción visual de lo que se ve en el elemento,
-        pero no describe adecuadamente la *función* de este elemento en nuestra web. 
-        icono-menu o menu-mobile, por ejemplo, cumplen mejor este requerimiento.   -->
-        <div class= "hamburguesa">
-            <i class="fas fa-bars"></i>
-        </div>
-        <nav class="barra">
-            <ul>
-                <li class="button"><a href="#hola">HOLA</a></li>
-                <li class="button"><a href="#conocimientos">CONOCIMIENTOS</a></li>
-                <li class="button"><a href="#proyectos">PROYECTOS</a></li>
-
-                <!-- Aqui distinguis entre dos clases (recuadro y con-recuadro) pero nunca las usas separadas. 
-                No creo que tenga sentido hacer dos clases: todos los estilos debieran estar en 
-                recuadro o en con-recuadro y mantener solo una. 
-                Por otro lado, el nombre no es apropiado, ya que no es descriptivo en sentido funcional.
-                Lo mismo ocurre con texto-hover  -->
-                <li class="button recuadro con-recuadro "><a class= "texto-hover" href="#contacto"> CONTACTO </a></li>
+    
+        <button class= "menu-responsive-icon"><i class="fas fa-bars"></i></button> 
+       
+        <nav class="header-navbar hidde-menu-header">
+            <ul class ="header-navbar-list" >
+                <li class="header-navbar-link"><a href="#hola">HOLA</a></li>
+                <li class="header-navbar-link"><a href="#conocimientos">CONOCIMIENTOS</a></li>
+                <li class="header-navbar-link"><a href="#proyectos">PROYECTOS</a></li>
+                <li class="header-navbar-link theme-link "><a class= "texto-hover" href="#contacto"> CONTACTO </a></li>
             </ul>
         </nav>
+        
     </header>
 
-    <!--*************************************-->
-    <!--       🙈  SECCION HOLA    🙈        -->
-    <!--*************************************-->
+    <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+    <!--                                FIN   HEADER                                        -->
+    <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+    
+
+
+    <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+    <!--                               INICIO PRESENTACION                                  -->
+    <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+    
 
     <section class="seccion-hola">
 
@@ -68,11 +66,11 @@
                         <!-- Cuando una línea del código tiene más de 80 ó 100 caracteres, 
                         preferimos hacer un salto de línea para facilitar la legibilidad. 
                         En este caso, diríamos:
-                        <p class="button recuadro con-recuadro">
+                        <p class="header-navbar-link theme-link con-theme-link">
                             <a href="https://github.com/Lauriacunia">MI GITHUB</a>
                         </p> -->
 
-                        <p class="button recuadro con-recuadro"><a href="https://github.com/Lauriacunia">MI GITHUB</a></p>
+                        <p class="header-navbar-link theme-link con-theme-link"><a href="https://github.com/Lauriacunia">MI GITHUB</a></p>
                     </div>
                     
                 </div>
@@ -84,10 +82,14 @@
             </div>
 
     </section>
+    <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+    <!--                                FIN PRESENTACION                                     -->
+    <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
 
-    <!--*************************************-->
-    <!--   🙈  SECCION MIS CONOCIMIENTOS  🙈 -->
-    <!--*************************************-->
+
+   <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+    <!--                                INICIO MIS CONOCIMIENTOS                                        -->
+    <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
 
     <section class="seccion-misconocimientos" id="conocimientos">
 
@@ -237,10 +239,14 @@
         </div>
 
     </section>
+<!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+<!--                                FIN MIS CONOCIMIENTOS                               -->
+<!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
 
-    <!--*************************************-->
-    <!--       🙈   SECCION CITA     🙈       -->
-    <!--*************************************-->
+
+<!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+<!--                                INICIO CITA                                         -->
+<!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
 
     <section class="seccion-cita">
 
@@ -265,10 +271,14 @@
         </div>
 
     </section>
+<!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+<!--                                FIN   CITA                                          -->
+<!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
 
-    <!--*************************************-->
-    <!--    🙈 SECCION MIS PROYECTOS  🙈     -->
-    <!--*************************************-->
+
+<!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+<!--                           INICIO MIS PROYECTOS                                     -->
+<!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
 
 
     <section class="seccion-misproyectos" id="proyectos">
@@ -278,15 +288,15 @@
                 <h2 class="titulo-mediano">Mis proyectos</h2>
             </div>
             
-            <nav class="barra-proyectos">
+            <nav class="header-navbar-proyectos">
 
                 <ul>
-                    <li class="button recuadro con-recuadro "><a class= "texto-hover" href="https://github.com/Lauriacunia"> TODOS </a></li>
-                    <li class="button"><a href="">HTML/CSS</a></li>
+                    <li class="header-navbar-link theme-link con-theme-link "><a class= "texto-hover" href="https://github.com/Lauriacunia"> TODOS </a></li>
+                    <li class="header-navbar-link"><a href="">HTML/CSS</a></li>
                     <!-- Cuidado! es Javascript. Especialmente en un portfolio, es muy importante
                     siempre escribir bien las tecnologias -->
-                    <li class="button"><a href="">Javascrip</a></li>
-                    <li class="button"><a href="">Java-API</a></li>
+                    <li class="header-navbar-link"><a href="">Javascrip</a></li>
+                    <li class="header-navbar-link"><a href="">Java-API</a></li>
 
 
                     <!-- Respondiendo al comentario de mas abajo: hiciste bien, ya que los estilos de a se aplican
@@ -374,21 +384,24 @@
             </div>
         </div>
     </section>
+<!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+<!--                                FIN  MIS PROYECTOS                                  -->
+<!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
 
 
-    <!--*************************************-->
-    <!--       🙈   FOOTER    🙈             -->
-    <!--*************************************-->
+<!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+<!--                                INICIO FOOTER                                        -->
+<!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
 
 
     <footer id="contacto"> 
         <div class="contenedor-footer">
 
             <nav >
-                <ul class="barra-footer">
-                    <li class="button button-footer"><a href="#hola">HOLA</a></li>
-                    <li class="button button-footer"><a href="#conocimientos">CONOCIMIENTOS</a></li>
-                    <li class="button button-footer"><a href="#proyectos">PROYECTOS</a></li>
+                <ul class="header-navbar-footer">
+                    <li class="header-navbar-link header-navbar-link-footer"><a href="#hola">HOLA</a></li>
+                    <li class="header-navbar-link header-navbar-link-footer"><a href="#conocimientos">CONOCIMIENTOS</a></li>
+                    <li class="header-navbar-link header-navbar-link-footer"><a href="#proyectos">PROYECTOS</a></li>
                 </ul>
             </nav>
     
@@ -424,7 +437,10 @@
         </div>
         
     </footer>
-
+    <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+    <!--                                FIN   FOOTER                                       -->
+    <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
+    <script src="index.js"></script>
 </body>
 
 </html>

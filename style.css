@@ -6,781 +6,676 @@ de la conexión del usuario, y puede afectar negativamente el tiempo de carga de
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-
-
 /*--------------------------------
       🍓 SETTINGS GENERALES 🍓
 ----------------------------------*/
 
 * {
-    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
+html {
+	scroll-behavior: smooth;
 }
-
+a {
+	text-decoration: none;
+}
 /* Dado que estos estilos son iguales, deberiamos ponerlos separados por coma:
 a:link, a:visited {. Misma observación para el resto de los a: */
 
 a:link {
-    color: #130817;
-  }
-  
-a:visited {    /*no me gusta que quede azul vistado */
-    color: #130817;
-  }
+	color: #130817;
+}
+
+a:visited {
+	/*no me gusta que quede azul vistado */
+	color: #130817;
+}
 
 a:hover {
-    color:#dc143c;
-   }
+	color: #dc143c;
+}
 
-   /* Links-contacto y header-navbar-footer tienen el mismo estilado. No tiene sentido
-   entonces que sean clases distintas: deberian ser la misma con un nombre mas descriptivo.
-   header-navbar footer en particular no es un buen nombre (parece referirse al contenedor de los links, 
-   y no a los links en sí. Yo le pondria "links-contacto" a todos  */
+h3 {
+	font-family: "Montserrat", serif;
+	font-size: 30px;
+}
 
 .links-contacto a:link {
-    color: #F5F3F5;
-  }
+	color: #f5f3f5;
+}
 
-.links-contacto a:visited {    /*no me gusta que quede azul vistado */
-    color: #F5F3F5;
-  }
+.links-contacto a:visited {
+	color: #f5f3f5;
+}
 
 .links-contacto a:hover {
-    color:#130817;
-   }
+	color: #130817;
+}
 
 .header-navbar-footer a:link {
-    color: #F5F3F5;
-  }
+	color: #f5f3f5;
+}
 
-.header-navbar-footer a:visited  {
-    color: #F5F3F5;
-  }
+.header-navbar-footer a:visited {
+	color: #f5f3f5;
+}
 
 .header-navbar-footer a:hover {
-    color: #130817;
-  }
-
-
-.theme-link:hover{
-    background-color: #dc143c;
-    color:white;
-    border:2px solid #dc143c;
-}
-.theme-link a {
-    color: inherit;
+	color: #130817;
 }
 
-.texto-hover:hover{
-    color: #F5F3F5;   
+.theme-solid-link:hover {
+	background-color: #dc143c;
+	color: white;
+	border: 2px solid #dc143c;
+}
+.theme-solid-link a {
+	color: inherit;
 }
 
-
-
-img{
-    width: 100%;
-    height: auto;
+.texto-hover:hover {
+	color: #f5f3f5;
 }
 
-/* Los elementos <i> no tienen width ya que son elementos decorativos, similar a los elementos en linea.
-Fijate que podemos eliminar su estilado sin ninguna consecuencia en la web  */
-i{
-    width: 100%;
-    height: auto;
+img {
+	width: 100%;
+	height: auto;
+}
+.theme-simple {
+	background-color: #ffffff;
 }
 /* 
 Intenta siempre que tu CSS se lea en el mismo orden que tu HTML: el body tendria que ir mas arriba, 
 debajo de html  */
 
-body{
-    background-color:#F5F3F5;
+h2 {
+	text-align: center;
+	color: #dc143c;
+	font-family: "Montserrat", serif;
+	font-size: 50px;
+	  
+}
+body {
+	background-color: #f5f3f5;
+}
+
+.in-line {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.in-stack {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.in-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 /*--------------------------------
        🍓 HEADER  🍓
 ----------------------------------*/
-header{
-
-    display: flex;
-    justify-content: flex-end;
-    
+.header {
+	justify-content: flex-end;
 }
 
 /* Este estilado deberia ir mas arriba, en estilos generales */
-a {
-    text-decoration: none;
-}
-.menu-responsive-icon{
-    display:none;
+
+.menu-responsive-icon {
+	display: none;
 }
 
-.texto-hover{
-    color:inherit; /*toma el color del antecesor*/
+.header-navbar {
+	display: flex;
+	margin: 20px;
+
+	/* Queria la header-navbar mas finita */
 }
-
-/* En que sentido querias la header-navbar "mas finita"? Margin la separa de sus bordes - dandole un espaciado
-entre el comienzo de la web y la siguiente seccion. Display flex en este caso no hace nada, 
-ya que /header-navbar tiene un solo hijo, ul.  */
-.header-navbar{
-    display: flex;
-    margin: 20px; 
-
-/* Queria la header-navbar mas finita */
-}
-
-
 
 ul {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-
-
+	display: flex;
+	align-items: center;
+	list-style-type: none;
 }
 
-
-.header-navbar-link {
-
-    font-family: 'Work Sans', sans-serif;
-    margin-right: 40px;
-
+.navbar-link {
+	font-family: 'Work Sans', sans-serif;
+	margin-right: 40px;
 }
 
-.theme-link {
-
-    /* Podemos resumir estas cuatro ordenes de padding en una, asi: padding: 10px 20px; */
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 150px;
-    text-align: center;
-    border: 2px solid #130817;
-
-    
+.theme-solid-link {
+	/* Podemos resumir estas cuatro ordenes de padding en una, asi: padding: 10px 20px; */
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 150px;
+	text-align: center;
+	color: black;
+	border: 2px solid #130817;
 }
 
 /*--------------------------------
-     🍓   SECCIÓN HOLA  🍓
+     🍓   SECCIÓN hello  🍓
+    
 ----------------------------------*/
 
-.seccion-hola { 
-   
-    display: flex;
-    justify-content: center;
-    
-
+.hello-container {
+	justify-content: space-evenly;
+	padding: 70px;
+	width: 90%;
 }
 
-.contenedor-hola {
-
-    background-color:#ffffff;
-    display: flex;
-    justify-content: space-evenly;
-    padding:70px;
-    width: 90%;
-
+.hello-text {
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
-.contenido-hola {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    /*sin el display flex se veia igual, 
-    pero lo deje pensando en el comportamiento responsive*/   
+.name {
+	/* No es necesario display: flex aqui */
+	display: flex;
+	margin-bottom: 20px;
+}
+.ocupation {
+	font-family: 'Work Sans', sans-serif;
+	color: #5c555f;
+	margin-bottom: 60px;
 }
 
-.hola{
-
-    font-family: "Montserrat", serif;
-    font-size: 30px;
-
-}
-
-.nombre{
-    /* No es necesario display: flex aqui */
-    display: flex;
-    margin-bottom:20px;
-    
-
-}
-.descripcion{
-        /* No es necesario display: flex aqui */
-    display:flex;
-    font-family: 'Work Sans', sans-serif;
-    color:#5c555f;
-}
- 
-.mas-margin{
-    margin-top: 60px;
-/* No es necesario justify-content: center; aqui: no estamos usando flex en este elemento */
-    justify-content: center;
-}
-
-.imagen-hola{
-            /* No es necesario display: flex aqui */
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 40%;
+.hello-img {
+	max-width: 40%;
 }
 
 /*--------------------------------
-   🍓   SECCIÓN CONOCIMIENTOS  🍓
+   🍓   SECCIÓN skills  🍓
 ----------------------------------*/
 
-
-/* Fijate que las secciones mis conocimientos y tarjetas son iguales desde el punto de vista del estilado
-Podrian tener el mismo nombre de clase. Por ejemplo, es habitual separar entre secciones principales y secundarias */
-.seccion-misconocimientos {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
- 
+/* Fijate que las secciones mis skills y tarjetas son iguales desde el punto de vista del estilado
+Podrian tener el mismo name de clase. Por ejemplo, es habitual separar entre secciones principales y secundarias */
+.mySkills {
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
-.contenedor-conocimientos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    width: 70%;
-
+.skills-container {
+	width: 70%;
 }
-
-
-.titulo-mediano{
-    text-align: center;
-    color:#dc143c;
-    font-family: "Montserrat", serif;
-    font-size: 50px;
+.skills-title {
     padding-top: 60px;
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 }
-.contenedor-frase{
-    display: flex;
-    justify-content: center;
-    width: 550px;
-   
+.contenedor-frase {
+	display: flex;
+	justify-content: center;
+	width: 550px;
 }
-.frase{
-    text-align: center;
-    color: #130817;
-    font-family: 'Work Sans', sans-serif;
-    padding-bottom: 60px;
+.frase {
+	text-align: center;
+	color: #130817;
+	font-family: 'Work Sans', sans-serif;
+	padding-bottom: 60px;
 }
-.contenedor-tarjetas{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: space-around;
-    max-width: 1300px;
-    padding-bottom: 60px;
+.contenedor-tarjetas {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: space-around;
+	max-width: 1300px;
+	padding-bottom: 60px;
 }
-.tarjeta  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #130817;     
-    width: 150px;
-    height: 150px;
-    /* Fijate que este padding es excesivo: tanto el icono como el texto estan rebalsando. 
+.tarjeta {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #130817;
+	width: 150px;
+	height: 150px;
+	/* Fijate que este padding es excesivo: tanto el icono como el texto estan rebalsando. 
     Se veria igual con un padding de 15px por ejemplo */
-    padding: 30px;
-    margin:15px;
-    
+	padding: 30px;
+	margin: 15px;
 }
-.contenedor-icono{
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    color:#F5F3F5;
-    font-size: 80px;
-}
-
-.skill{
-
-    font-family: 'Work Sans', sans-serif;
-    text-align: center;
-    margin: 10px;
-    color:#F5F3F5;
+.contenedor-icono {
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	color: #f5f3f5;
+	font-size: 80px;
 }
 
+.skill {
+	font-family: 'Work Sans', sans-serif;
+	text-align: center;
+	margin: 10px;
+	color: #f5f3f5;
+}
 
 /*--------------------------------
     🍓    SECCIÓN CITA   🍓
 ----------------------------------*/
-.seccion-cita { 
-   
-    display: flex;
-    justify-content: center;
-   
-    
+.seccion-cita {
+	display: flex;
+	justify-content: center;
 }
 .contenedor-cita {
-
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #dc143c;
-    padding:70px;
-    color:#F5F3F5;
-    width:60%;
-    /*me gusta que sea angosto 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #dc143c;
+	padding: 70px;
+	color: #f5f3f5;
+	width: 60%;
+	/*me gusta que sea angosto 
     y que no ocupe todo el ancho*/
 }
 
 /* Seria preferible que el espaciado vertical en esta seccion este hecho por flex con align items
 y no con margin.  */
-.cita{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border:2px solid #F5F3F5;
-    padding: 40px;
-    margin:40px;
+.cita {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #f5f3f5;
+	padding: 40px;
+	margin: 40px;
 }
-.cita-texto{
-    font-family: 'Lato', sans-serif;
-    font-size: 15px;
-    text-align: center;
-    color:#F5F3F5;
-    
+.cita-texto {
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	text-align: center;
+	color: #f5f3f5;
 }
-.firma{
-    display: flex;
-    justify-content: center;
-   
-
+.firma {
+	display: flex;
+	justify-content: center;
 }
 
-.cita-firma{
-
-    font-family: "Montserrat", serif;
-    font-size: 15px;
-    color:#F5F3F5;
-    text-align: center;
-
+.cita-firma {
+	font-family: "Montserrat", serif;
+	font-size: 15px;
+	color: #f5f3f5;
+	text-align: center;
 }
-
-
-
 
 /*--------------------------------
      🍓  SECCIÓN PROYECTOS  🍓
 ----------------------------------*/
 .seccion-misproyectos {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 100px;  
-    
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
-.header-navbar-proyectos{
-    display: flex;
-    margin: 20px; 
+.header-navbar-proyectos {
+	display: flex;
+	margin: 20px;
 }
 
-.contenedor-misproyectos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    width: 90%;
-    
+.contenedor-misproyectos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #ffffff;
+	width: 90%;
 }
-.filtros{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.filtros {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
 }
 
-
-.contenedor-tarjetas-proyectos{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: space-around;
-    width: 90%;
-    margin-bottom: 60px;
-
+.contenedor-tarjetas-proyectos {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: space-around;
+	width: 90%;
+	margin-bottom: 60px;
 }
-.proyecto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #130817;   
-    width: 300px;
-    height: 250px;
-    padding: 15px;
-    margin:20px;
-    /* a ninguna tarjeta le puse border radius 
+.proyecto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #130817;
+	width: 300px;
+	height: 250px;
+	padding: 15px;
+	margin: 20px;
+	/* a ninguna tarjeta le puse border radius 
     por una decision de estilo*/
 }
-.contenedor-titulo{
-    padding:0px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.contenedor-titulo {
+	padding: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 /* Ni display flex ni justify content ni height son necesarios aqui */
-.imagen-proyecto{
-    display:flex;
-    justify-content: center;
-    width: 150px;
-    height: auto;
-
+.imagen-proyecto {
+	display: flex;
+	justify-content: center;
+	width: 150px;
+	height: auto;
 }
-.titulo{
-    font-family: 'Work Sans', sans-serif;
-    text-align: center;
-    color: #F5F3F5;
+.titulo {
+	font-family: 'Work Sans', sans-serif;
+	text-align: center;
+	color: #f5f3f5;
 }
 /*--------------------------------
      🍓    FOOTER    🍓
 ----------------------------------*/
-.contenedor-footer{
-    background-color: #dc143c;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:30px;
+.contenedor-footer {
+	background-color: #dc143c;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
 }
-.header-navbar-link-footer{
-    color:#F5F3F5;
-    margin:20px;
+.navbar-link-footer {
+	color: #f5f3f5;
+	margin: 20px;
+}
+.iconos-contacto {
+	/* cuidado con las mayusculas: pueden generar problemas en algunos navegadores */
+	Display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
 
+.links-contacto {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #f5f3f5;
+	width: 40px;
+	height: auto;
+	margin: 30px;
 }
-.iconos-contacto{
-    /* cuidado con las mayusculas: pueden generar problemas en algunos navegadores */
-    Display:flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.links-contacto{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    color: #F5F3F5;
-    width: 40px;
-    height: auto;
-    margin:30px;
-}
-.icono-footer{
-    font-size: 25px;
-    
+.icono-footer {
+	font-size: 25px;
 }
 
 /* este elemento no existe en tu html */
-.imagen-final{
-    width: 50px;
-    height: auto;
+.imagen-final {
+	width: 50px;
+	height: auto;
 }
-.imagen-contacto{
-    width: 350px;
-    
+.imagen-contacto {
+	width: 350px;
 }
-
-
 
 /*--------------------------------
       🍓  DISEÑO RESPONSIVE  🍓
 ----------------------------------*/
 
-
-
 /*--------------------------------
      🍓     TABLET       🍓
 ----------------------------------*/
-@media (min-width: 600px) and (max-width:900px){
+@media (min-width: 600px) and (max-width: 900px) {
+	/* Seccion Header*/
 
-    /* Seccion Header*/
-    
-
-    .menu-responsive-icon{
-        display:block;
-        /* justify-content no aplica aqui ya que menu-responsive-icon no es flex sino block */
-        justify-content: left;
-        color:#dc143c;
-        font-size: 35px;
-        /* fijate que por este margin tu icono se ve algo corrido respecto a la seccion que sigue, 
+	.menu-responsive-icon {
+		display: block;
+		/* justify-content no aplica aqui ya que menu-responsive-icon no es flex sino block */
+		justify-content: left;
+		color: #dc143c;
+		font-size: 35px;
+		/* fijate que por este margin tu icono se ve algo corrido respecto a la seccion que sigue, 
         yo le daria margin top y bottom pero no a la izquierda o a la derecha */
-        margin:20px;
+		margin: 20px;
+	}
+	.hidde-menu-header {
+		display: none;
+	}
 
-    }
-    .hidde-menu-header{
-        display:none;
-    }
+	.header-navbar ul {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	/*Seccion hello*/
 
-    .header-navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    /*Seccion Hola*/
+	.contenedor-hello {
+		/* buen uso de reverse aqui */
+		flex-direction: column-reverse;
+		align-items: center;
+	}
 
-    .contenedor-hola {
-        /* buen uso de reverse aqui */
-    flex-direction: column-reverse;
-    align-items: center;
+	.hello-text-container {
+		align-items: center;
+	}
 
-    }
-    
-    .contenido-hola {
-    align-items: center;
+	/* no es necesario esto */
+	.ocupation {
+		text-align: center;
+	}
 
-    }
+	.navbar-link {
+		margin-right: 0px;
+	}
 
-    /* no es necesario esto */
-    .descripcion{
-        text-align: center;
-    }
+	/*Seccion Mis skills*/
 
-    .header-navbar-link{
-        margin-right: 0px;
-    }
+	.mySkills {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+	.skills-container {
+		width: 80vw;
+	}
 
+	.titulo-mediano {
+		font-size: 30px;
+	}
 
-    /*Seccion Mis conocimientos*/
+	.contenedor-frase {
+		width: 430px;
+	}
 
-    .seccion-misconocimientos {
-        margin-top: 60px;
-        margin-bottom: 60px;
+	.frase {
+		font-size: 15px;
+	}
 
-    }
-    .contenedor-conocimientos{
-        width: 80vw;
-    }
-
-    .titulo-mediano{
-        font-size: 30px;
-    }
-
-    .contenedor-frase{
-        width: 430px;
-    }
-
-    .frase{
-        font-size:15px;
-    }
-
-    .tarjeta {
-        width: 120px;
-        height: 120px;
-        /* este padding es innecesario */
-        padding: 20px;
-        margin: 5px;
-
-    }
-    .contenedor-icono{
-        
-        font-size: 60px;
-    }
+	.tarjeta {
+		width: 120px;
+		height: 120px;
+		/* este padding es innecesario */
+		padding: 20px;
+		margin: 5px;
+	}
+	.contenedor-icono {
+		font-size: 60px;
+	}
 }
-
 
 /*--------------------------------
      🍓   SMARTPHONE    🍓
 ----------------------------------*/
 
-@media (max-width:600px){
-    
-    /*Header */
-  
-    /* mismas observaciones que en tablet */
-    .menu-responsive-icon{
-        display:block;
-        justify-content: left;
-        color:#dc143c;
-        font-size: 25px;
-        margin:10px;
+@media (max-width: 600px) {
+	/*Header */
 
-    }
+	/* mismas observaciones que en tablet */
+	.menu-responsive-icon {
+		display: block;
+		justify-content: left;
+		color: #dc143c;
+		font-size: 25px;
+		margin: 10px;
+	}
 
-    /*Seccion hola*/
+	/*Seccion hello*/
 
-    .hola{
-        font-size: 15px;
-       
-    }
+	.hello {
+		font-size: 15px;
+	}
 
-    .descripcion{
+	.ocupation {
+		font-size: 8px;
+	}
+	.contenedor-hello {
+		flex-direction: column-reverse;
+		align-items: center;
+		padding: 20px;
+	}
 
-        font-size: 8px;  
-    }
-    .contenedor-hola {
-        flex-direction: column-reverse;
-        align-items: center;
-        padding:20px;
-     
-    
-        }
+	.hello-text-container {
+		align-items: center;
+		margin-bottom: 0px;
+	}
+	.ocupation {
+		text-align: center;
+	}
 
-    .contenido-hola {
-            align-items: center;
-            margin-bottom: 0px;
-        
-        }
-    .descripcion{
-            text-align: center;
-        }
-    
-    .header-navbar-link{
-            margin-right: 0px;
-        }
+	.navbar-link {
+		margin-right: 0px;
+	}
 
-    .theme-link {
-            padding-left: 10px;
-            /* aqui tenes un error y este padding no se esta aplicando */
-            padding-right: 10x;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            width: 90px;
-            text-align: center;
-            font-size: 10px;
-            border: 1px solid #130817;
-        }
-    .mas-margin{
-        margin-bottom: 20px;
-        margin-top:35px;
-    }
-    
+	.theme-link {
+		padding-left: 10px;
+		/* aqui tenes un error y este padding no se esta aplicando */
+		padding-right: 10x;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		width: 90px;
+		text-align: center;
+		font-size: 10px;
+		border: 1px solid #130817;
+	}
+	.mas-margin {
+		margin-bottom: 20px;
+		margin-top: 35px;
+	}
 
-    /*Seccion Mis conocimientos*/
+	/*Seccion Mis skills*/
 
-    .seccion-misconocimientos {
-        margin-top: 30px;
-        margin-bottom: 30px;
+	.mySkills {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.contenedor-frase {
+		display: none;
+	}
 
-    }
-    .contenedor-frase{
-        display:none;
-    }
+	.titulo-mediano {
+		font-size: 20px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 
+	.contenedor-frase {
+		width: 300px;
+		height: auto;
+		padding-bottom: 0px;
+	}
 
-    .titulo-mediano{
-            font-size: 20px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-    }
+	.frase {
+		font-size: 9px;
+		padding-bottom: 25px;
+	}
+	.contenedor-tarjetas {
+		padding-bottom: 20px;
+	}
 
-    .contenedor-frase{
-        width: 300px;
-        height: auto;
-        padding-bottom: 0px;
-    }
+	.tarjeta {
+		width: 100px;
+		height: 100px;
+		padding: 20px;
+		margin: 5px;
+	}
+	.skill {
+		margin: 5px;
+		font-size: 10px;
+	}
 
-    .frase{
-        font-size:9px;
-        padding-bottom: 25px;
-    }
-    .contenedor-tarjetas{
-        padding-bottom: 20px;
-    }
+	.contenedor-icono {
+		font-size: 35px;
+		padding: 10px;
+	}
 
-    .tarjeta {
-            width: 100px;
-            height: 100px;
-            padding: 20px;
-            margin: 5px;
-    
-        }
-    .skill {
-            
-            margin: 5px;
-            font-size: 10px;
-        }
+	/*Seccion cita*/
 
-    .contenedor-icono{
-            
-            font-size: 35px;
-            padding: 10px;
-        }
+	.contenedor-cita {
+		padding: 30px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.cita-texto {
+		font-size: 10px;
+	}
 
-    /*Seccion cita*/
+	.cita-firma {
+		font-size: 10px;
+	}
 
-    .contenedor-cita{
-        padding: 30px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .cita-texto{
-        font-size: 10px;
-    }
+	.cita {
+		padding: 10px;
+		margin: 10px;
+	}
 
-    .cita-firma{
-        font-size: 10px;
-    }
+	/*Seccion mis proyectos*/
 
-    .cita{
-        padding:10px;
-        margin:10px;
-    }
+	.seccion-misproyectos {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
 
-    /*Seccion mis proyectos*/
+	.header-navbar-proyectos {
+		display: none;
+	}
+	.proyecto {
+		background-color: #130817;
+		width: 200px;
+		height: 150px;
+		padding: 10px;
+		margin: 5px;
+	}
+	.imagen-proyecto {
+		width: 100px;
+		height: auto;
+		margin: 0px;
+	}
+	.contenedor-titulo {
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+	.titulo {
+		font-size: 12px;
+	}
+	.contenedor-tarjetas-proyectos {
+		margin-bottom: 0px;
+		padding-bottom: 20px;
+	}
 
-    .seccion-misproyectos {
-       
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+	/*Seccion Footer*/
 
-    .header-navbar-proyectos{
-        display:none;
-    }
-    .proyecto {
-        background-color: #130817;
-        width: 200px;
-        height: 150px;
-        padding:10px;
-        margin:5px;
-    }
-    .imagen-proyecto{
-        width: 100px;
-        height: auto;
-        margin:0px;
-    }
-    .contenedor-titulo{
-        margin-bottom: 5px;
-        margin-top:5px;
-    }
-    .titulo{
-        font-size: 12px;
-    }
-    .contenedor-tarjetas-proyectos{
-        margin-bottom: 0px;
-        padding-bottom: 20px;
-    }
-
-    /*Seccion Footer*/
-  
-    .contenedor-footer{
-        padding:15px;
-    }
-    .header-navbar-footer{
-        display:none;
-    }
-    .imagen-contacto{
-        width: 200px;
-        height: auto;
-    }
-    .iconos-contacto{
-        margin-bottom: 10px;
-        justify-content: center;
-    }
-    .links-contacto{
-        width: 50px;
-        height: auto;
-        margin:5px;
-    }
+	.contenedor-footer {
+		padding: 15px;
+	}
+	.header-navbar-footer {
+		display: none;
+	}
+	.imagen-contacto {
+		width: 200px;
+		height: auto;
+	}
+	.iconos-contacto {
+		margin-bottom: 10px;
+		justify-content: center;
+	}
+	.links-contacto {
+		width: 50px;
+		height: auto;
+		margin: 5px;
+	}
 }

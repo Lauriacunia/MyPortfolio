@@ -17,19 +17,19 @@
     <!--                                INICIO  HEADER                                      -->
     <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
 
-    <header>
+    <header class = "header in-line">
     
         <button class= "menu-responsive-icon"><i class="fas fa-bars"></i></button> 
        
         <nav class="header-navbar hidde-menu-header">
             <ul class ="header-navbar-list" >
-                <li class="header-navbar-link"><a href="#hola">HOLA</a></li>
-                <li class="header-navbar-link"><a href="#conocimientos">CONOCIMIENTOS</a></li>
-                <li class="header-navbar-link"><a href="#proyectos">PROYECTOS</a></li>
-                <li class="header-navbar-link theme-link "><a class= "texto-hover" href="#contacto"> CONTACTO </a></li>
+                <li class="navbar-link"><a href="#hello">HOLA</a></li>
+                <li class="navbar-link"><a href="#skills">CONOCIMIENTOS</a></li>
+                <li class="navbar-link"><a href="#proyectos">PROYECTOS</a></li>
+                <li class="navbar-link theme-solid-link "><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
-        
+
     </header>
 
     <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
@@ -43,44 +43,33 @@
     <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
     
 
-    <section class="seccion-hola">
-
-            <div class="contenedor-hola">
-
-                <div class="contenido-hola">
-
-                    <div>
-                        <h3 class="hola" id="hola"> ¡Hola!, Soy </h3>
-                    </div>
-
-                    <div class="nombre">
-                        <img src="images/firma.png"/>
-                    </div>
-
-                    <div class="descripcion">
-                        <h3 > Backend Developer Trainee/Junior </h3>
-                    </div>
-
-                    <div class="mas-margin">
-
-                        <!-- Cuando una línea del código tiene más de 80 ó 100 caracteres, 
-                        preferimos hacer un salto de línea para facilitar la legibilidad. 
-                        En este caso, diríamos:
-                        <p class="header-navbar-link theme-link con-theme-link">
-                            <a href="https://github.com/Lauriacunia">MI GITHUB</a>
-                        </p> -->
-
-                        <p class="header-navbar-link theme-link con-theme-link"><a href="https://github.com/Lauriacunia">MI GITHUB</a></p>
-                    </div>
-                    
+    <section class ="in-line">
+        <div class="hello-container in-line theme-simple">
+            <div class="hello-text in-stack">
+                <div class="hello" id="hello">
+                    <h3>¡Hola!, Soy</h3>
                 </div>
 
-                <div class="imagen-hola">
-                    <img src="images/pies.png">
+                <div class="name">
+                    <img src="images/firma.png"/>
                 </div>
 
+                <div class="ocupation">
+                    <h3>FullStack Developer Trainee/Junior</h3>
+                </div>
+
+                <div class="navbar-link theme-solid-link" >
+                    <p>
+                        <a href="https://github.com/Lauriacunia">MI GITHUB</a>
+                    </p>
+                </div>
+                
             </div>
 
+            <div class="hello-img in-line">
+                <img src="images/pies.png">
+            </div>
+        </div>
     </section>
     <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
     <!--                                FIN PRESENTACION                                     -->
@@ -88,30 +77,27 @@
 
 
    <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
-    <!--                                INICIO MIS CONOCIMIENTOS                                        -->
+    <!--                                INICIO MIS skills                                        -->
     <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
 
-    <section class="seccion-misconocimientos" id="conocimientos">
+    <section class="mySkills in-line" id="skills">
 
-        <div class="contenedor-conocimientos">
+        <div class="skills-container in-stack theme-simple">
 
-            <div>
-                <h2 class="titulo-mediano">Mis conocimientos</h2>
+            <div class = "skills-title">
+                <h2 >MIS CONOCIMIENTOS</h2>
             </div>
 
             <div class="contenedor-frase">
 
-                <!-- No se recomienda usar <br> prácticamente nunca. En este caso en particular, 
-                estamos usando <br> para estilar el contenido, violando la regla de separación 
-                de responsabilidades entre CSS y HTML. 
-                CSS debe ser el único encargado de estilar nuestra web. 
-                En este caso, por ejemplo, podríamos poner cada línea dentro de un <span> y decirle en el 
-                CSS a .frase: display: flex; flex-direction: column;. 
-                De esta manera nos aseguramos de que el HTML sólo de estructura, y el CSS el estilado -->
-
-                <p class="frase">Sin el juego el aprendizaje y la evolución son imposibles.<br> El trabajo creativo es
-                    juego, <br> es especulación libre usando los materiales<br> de la forma que cada uno elija.<br> La mente creativa
-                    juega con los objetos que ama<br>y éstos son mis juguetes favoritos...</p>
+                <p class="frase in-stack">
+                    <span>Sin el juego el aprendizaje y la evolución son imposibles.</span>
+                    <span> El trabajo creativo es juego,</span> 
+                    <span> es especulación libre usando los materiales</span>
+                    <span> de la forma que cada uno elija</span>
+                    <span> La mente creativa juega con los objetos que ama</span>
+                    </span>y éstos son mis juguetes favoritos...</span>
+                </p>
             </div>
 
             <!-- Aqui olvidaste las comillas. Cuidado con eso. Si bien las comillas son opcionales en HTML5, 
@@ -120,7 +106,7 @@
                 y por mayor portabilidad en caso de que vayas a exportar este HTML a otras tecnologías.   -->
             <div class=contenedor-tarjetas>
 
-                <!-- Tarjeta no es un mal nombre, pero teniendo en cuenta que tenes dos tipos de tarjetas en tu web, 
+                <!-- Tarjeta no es un mal name, pero teniendo en cuenta que tenes dos tipos de tarjetas en tu web, 
                 ambos muy distintos, yo privilegiaria ser aun mas clara, incluso con el riesgo de ser redundante:
                 "tarjeta-skills", por ejemplo.  -->
                 <div class="tarjeta">
@@ -240,7 +226,7 @@
 
     </section>
 <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
-<!--                                FIN MIS CONOCIMIENTOS                               -->
+<!--                                FIN MIS skills                               -->
 <!--*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆**☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*――*☆*-->
 
 
@@ -291,12 +277,12 @@
             <nav class="header-navbar-proyectos">
 
                 <ul>
-                    <li class="header-navbar-link theme-link con-theme-link "><a class= "texto-hover" href="https://github.com/Lauriacunia"> TODOS </a></li>
-                    <li class="header-navbar-link"><a href="">HTML/CSS</a></li>
+                    <li class="navbar-link theme-link con-theme-link "><a class= "texto-hover" href="https://github.com/Lauriacunia"> TODOS </a></li>
+                    <li class="navbar-link"><a href="">HTML/CSS</a></li>
                     <!-- Cuidado! es Javascript. Especialmente en un portfolio, es muy importante
                     siempre escribir bien las tecnologias -->
-                    <li class="header-navbar-link"><a href="">Javascrip</a></li>
-                    <li class="header-navbar-link"><a href="">Java-API</a></li>
+                    <li class="navbar-link"><a href="">Javascrip</a></li>
+                    <li class="navbar-link"><a href="">Java-API</a></li>
 
 
                     <!-- Respondiendo al comentario de mas abajo: hiciste bien, ya que los estilos de a se aplican
@@ -399,9 +385,9 @@
 
             <nav >
                 <ul class="header-navbar-footer">
-                    <li class="header-navbar-link header-navbar-link-footer"><a href="#hola">HOLA</a></li>
-                    <li class="header-navbar-link header-navbar-link-footer"><a href="#conocimientos">CONOCIMIENTOS</a></li>
-                    <li class="header-navbar-link header-navbar-link-footer"><a href="#proyectos">PROYECTOS</a></li>
+                    <li class="navbar-link navbar-link-footer"><a href="#hello">hello</a></li>
+                    <li class="navbar-link navbar-link-footer"><a href="#skills">skills</a></li>
+                    <li class="navbar-link navbar-link-footer"><a href="#proyectos">PROYECTOS</a></li>
                 </ul>
             </nav>
     

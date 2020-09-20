@@ -6,9 +6,9 @@ de la conexión del usuario, y puede afectar negativamente el tiempo de carga de
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-/*--------------------------------
-      🍓 SETTINGS GENERALES 🍓
-----------------------------------*/
+/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
+                             GENERALES 
+▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
 * {
 	margin: 0;
@@ -18,23 +18,30 @@ de la conexión del usuario, y puede afectar negativamente el tiempo de carga de
 html {
 	scroll-behavior: smooth;
 }
+body {
+	background-color: #f5f3f5;
+}
+
 a {
 	text-decoration: none;
+	transition: 0.3s;
 }
-/* Dado que estos estilos son iguales, deberiamos ponerlos separados por coma:
-a:link, a:visited {. Misma observación para el resto de los a: */
-
-a:link {
-	color: #130817;
+img {
+	width: 100%;
+	height: auto;
 }
-
-a:visited {
-	/*no me gusta que quede azul vistado */
-	color: #130817;
+ul {
+	list-style-type: none;
 }
 
-a:hover {
+
+/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ      FONTS      ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
+
+h2 {
+	text-align: center;
 	color: #dc143c;
+	font-family: "Montserrat", serif;
+	font-size: 50px;
 }
 
 h3 {
@@ -42,64 +49,14 @@ h3 {
 	font-size: 30px;
 }
 
-.links-contacto a:link {
-	color: #f5f3f5;
-}
+/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ     THEMES    ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
-.links-contacto a:visited {
-	color: #f5f3f5;
-}
 
-.links-contacto a:hover {
-	color: #130817;
-}
-
-.header-navbar-footer a:link {
-	color: #f5f3f5;
-}
-
-.header-navbar-footer a:visited {
-	color: #f5f3f5;
-}
-
-.header-navbar-footer a:hover {
-	color: #130817;
-}
-
-.theme-solid-link:hover {
-	background-color: #dc143c;
-	color: white;
-	border: 2px solid #dc143c;
-}
-.theme-solid-link a {
-	color: inherit;
-}
-
-.texto-hover:hover {
-	color: #f5f3f5;
-}
-
-img {
-	width: 100%;
-	height: auto;
-}
 .theme-simple {
 	background-color: #ffffff;
 }
-/* 
-Intenta siempre que tu CSS se lea en el mismo orden que tu HTML: el body tendria que ir mas arriba, 
-debajo de html  */
 
-h2 {
-	text-align: center;
-	color: #dc143c;
-	font-family: "Montserrat", serif;
-	font-size: 50px;
-	  
-}
-body {
-	background-color: #f5f3f5;
-}
+/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ   LAYOUT   ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
 .in-line {
 	display: flex;
@@ -119,14 +76,44 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-/*--------------------------------
-       🍓 HEADER  🍓
-----------------------------------*/
+
+.size-90 {
+	width: 90%;
+}
+.size-70 {
+	width: 90%;
+}
+.size-60 {
+	width: 90%;
+}/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ PSEUDOCLASES Y PSEUDOELEMENTOS ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
+
+a:link,
+a:visited {
+	color: #130817;
+}
+.navbar-link:hover {
+	color: #dc143c;
+	font-weight: 500;
+}
+.theme-solid-link:hover {
+	text-decoration: none;
+	color: white;
+	background-color: #dc143c;
+	border: 1px solid #dc143c;
+	box-shadow: 3px 3px 3px #a8a0ac;
+}
+
+.theme-solid-link a, .navbar-link a {
+	color: inherit;
+}
+
+/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
+                            HEADER 
+▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
+
 .header {
 	justify-content: flex-end;
 }
-
-/* Este estilado deberia ir mas arriba, en estilos generales */
 
 .menu-responsive-icon {
 	display: none;
@@ -134,38 +121,27 @@ body {
 
 .header-navbar {
 	display: flex;
-	margin: 20px;
-
-	/* Queria la header-navbar mas finita */
-}
-
-ul {
-	display: flex;
-	align-items: center;
-	list-style-type: none;
+	margin: 20px 0px;
 }
 
 .navbar-link {
 	font-family: 'Work Sans', sans-serif;
-	margin-right: 40px;
-}
-
-.theme-solid-link {
-	/* Podemos resumir estas cuatro ordenes de padding en una, asi: padding: 10px 20px; */
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 150px;
+	font-size: 16px;
+	padding: 10px 20px;
 	text-align: center;
-	color: black;
-	border: 2px solid #130817;
+	border: 1px solid transparent;
+	letter-spacing: 4px;
+	cursor: pointer;
 }
-
-/*--------------------------------
-     🍓   SECCIÓN hello  🍓
-    
-----------------------------------*/
+.theme-solid-link {
+	padding: 10px 20px;
+	text-align: center;
+	border: 1px solid #130817;
+	transition: background-color 0.5s;
+}
+/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
+                             PRESENTACION 
+▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
 .hello-container {
 	justify-content: space-evenly;
@@ -193,9 +169,9 @@ ul {
 	max-width: 40%;
 }
 
-/*--------------------------------
-   🍓   SECCIÓN skills  🍓
-----------------------------------*/
+/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
+                            MIS CONOCIMIENTOS
+▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
 /* Fijate que las secciones mis skills y tarjetas son iguales desde el punto de vista del estilado
 Podrian tener el mismo name de clase. Por ejemplo, es habitual separar entre secciones principales y secundarias */
@@ -207,7 +183,7 @@ Podrian tener el mismo name de clase. Por ejemplo, es habitual separar entre sec
 	width: 70%;
 }
 .skills-title {
-    padding-top: 60px;
+	padding-top: 60px;
 	padding-bottom: 20px;
 }
 .contenedor-frase {
@@ -237,9 +213,7 @@ Podrian tener el mismo name de clase. Por ejemplo, es habitual separar entre sec
 	background-color: #130817;
 	width: 150px;
 	height: 150px;
-	/* Fijate que este padding es excesivo: tanto el icono como el texto estan rebalsando. 
-    Se veria igual con un padding de 15px por ejemplo */
-	padding: 30px;
+	padding: 15px;
 	margin: 15px;
 }
 .contenedor-icono {
@@ -257,9 +231,10 @@ Podrian tener el mismo name de clase. Por ejemplo, es habitual separar entre sec
 	color: #f5f3f5;
 }
 
-/*--------------------------------
-    🍓    SECCIÓN CITA   🍓
-----------------------------------*/
+/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
+                             CITA
+▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
+
 .seccion-cita {
 	display: flex;
 	justify-content: center;
@@ -305,9 +280,10 @@ y no con margin.  */
 	text-align: center;
 }
 
-/*--------------------------------
-     🍓  SECCIÓN PROYECTOS  🍓
-----------------------------------*/
+/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
+                             PROYECTOS
+▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
+
 .seccion-misproyectos {
 	display: flex;
 	justify-content: center;
@@ -372,9 +348,11 @@ y no con margin.  */
 	text-align: center;
 	color: #f5f3f5;
 }
-/*--------------------------------
-     🍓    FOOTER    🍓
-----------------------------------*/
+
+/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
+                             FOOTER 
+▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
+
 .contenedor-footer {
 	background-color: #dc143c;
 	display: flex;
@@ -415,12 +393,12 @@ y no con margin.  */
 	width: 350px;
 }
 
-/*--------------------------------
-      🍓  DISEÑO RESPONSIVE  🍓
-----------------------------------*/
+/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
+                             DISEÑO RESPONSIVE 
+▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
 /*--------------------------------
-     🍓     TABLET       🍓
+               TABLET       
 ----------------------------------*/
 @media (min-width: 600px) and (max-width: 900px) {
 	/* Seccion Header*/
@@ -499,7 +477,7 @@ y no con margin.  */
 }
 
 /*--------------------------------
-     🍓   SMARTPHONE    🍓
+          SMARTPHONE    
 ----------------------------------*/
 
 @media (max-width: 600px) {

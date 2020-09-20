@@ -54,8 +54,19 @@ h3 {
 
 .theme-simple {
 	background-color: #ffffff;
+	color:#130817;
+	box-shadow: 8px 8px 8px  #cf97a2;
+}
+.theme-flower {
+	background-color: #dc143c;
+	color:white;
+	box-shadow: 3px 3px 3px #a8a0ac;
 }
 
+.theme-dark {
+	background-color: #130817;
+	color:white;
+}
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ   LAYOUT   ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
 .in-line {
@@ -81,10 +92,10 @@ h3 {
 	width: 90%;
 }
 .size-70 {
-	width: 90%;
+	width: 70%;
 }
 .size-60 {
-	width: 90%;
+	width: 60%;
 }/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ PSEUDOCLASES Y PSEUDOELEMENTOS ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
 a:link,
@@ -106,7 +117,10 @@ a:visited {
 .theme-solid-link a, .navbar-link a {
 	color: inherit;
 }
-
+.skill-card:hover {
+	background-color: #dc143c;
+	box-shadow: 3px 3px 3px #a8a0ac;
+}
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
                             HEADER 
 ▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
@@ -173,113 +187,54 @@ a:visited {
                             MIS CONOCIMIENTOS
 ▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
-/* Fijate que las secciones mis skills y tarjetas son iguales desde el punto de vista del estilado
-Podrian tener el mismo name de clase. Por ejemplo, es habitual separar entre secciones principales y secundarias */
 .mySkills {
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
-.skills-container {
-	width: 70%;
-}
+
 .skills-title {
-	padding-top: 60px;
-	padding-bottom: 20px;
+	margin-top: 60px;
+	margin-bottom: 20px;
 }
-.contenedor-frase {
-	display: flex;
-	justify-content: center;
-	width: 550px;
+.quote-container {
+	margin-bottom: 60px;
 }
-.frase {
-	text-align: center;
-	color: #130817;
-	font-family: 'Work Sans', sans-serif;
-	padding-bottom: 60px;
-}
-.contenedor-tarjetas {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	align-content: space-around;
-	max-width: 1300px;
-	padding-bottom: 60px;
-}
-.tarjeta {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-	background-color: #130817;
-	width: 150px;
-	height: 150px;
-	padding: 15px;
-	margin: 15px;
-}
-.contenedor-icono {
-	display: flex;
-	justify-content: center;
-	padding: 5px;
-	color: #f5f3f5;
-	font-size: 80px;
+.quote {
+	font-family: 'Work Sans', sans-serif;	
 }
 
-.skill {
-	font-family: 'Work Sans', sans-serif;
-	text-align: center;
-	margin: 10px;
-	color: #f5f3f5;
+.skill-card {	
+	padding: 15px;
+	margin: 15px;
+	transition: 0.3s;
 }
+.skill-icon {
+	min-width: 160px;
+	padding: 10px;
+	color: #f5f3f5;
+	font-size: 100px;
+}
+
+
 
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
                              CITA
 ▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
-.seccion-cita {
-	display: flex;
-	justify-content: center;
-}
-.contenedor-cita {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: #dc143c;
-	padding: 70px;
-	color: #f5f3f5;
-	width: 60%;
-	/*me gusta que sea angosto 
-    y que no ocupe todo el ancho*/
-}
 
-/* Seria preferible que el espaciado vertical en esta seccion este hecho por flex con align items
-y no con margin.  */
-.cita {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.quote-principal-container {
+	padding: 70px;	
+}
+.quote-principal {
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
 	border: 2px solid #f5f3f5;
 	padding: 40px;
 	margin: 40px;
 }
-.cita-texto {
-	font-family: 'Lato', sans-serif;
-	font-size: 15px;
-	text-align: center;
-	color: #f5f3f5;
+.quote-icon{
+	font-size: 80px;
 }
-.firma {
-	display: flex;
-	justify-content: center;
-}
-
-.cita-firma {
-	font-family: "Montserrat", serif;
-	font-size: 15px;
-	color: #f5f3f5;
-	text-align: center;
-}
-
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
                              PROYECTOS
 ▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
@@ -309,7 +264,7 @@ y no con margin.  */
 	margin-top: 20px;
 }
 
-.contenedor-tarjetas-proyectos {
+.cards-container-proyectos {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -327,7 +282,7 @@ y no con margin.  */
 	height: 250px;
 	padding: 15px;
 	margin: 20px;
-	/* a ninguna tarjeta le puse border radius 
+	/* a ninguna skill-card le puse border radius 
     por una decision de estilo*/
 }
 .contenedor-titulo {
@@ -464,14 +419,14 @@ y no con margin.  */
 		font-size: 15px;
 	}
 
-	.tarjeta {
+	.skill-card {
 		width: 120px;
 		height: 120px;
 		/* este padding es innecesario */
 		padding: 20px;
 		margin: 5px;
 	}
-	.contenedor-icono {
+	.skill-icon {
 		font-size: 60px;
 	}
 }
@@ -561,11 +516,11 @@ y no con margin.  */
 		font-size: 9px;
 		padding-bottom: 25px;
 	}
-	.contenedor-tarjetas {
+	.cards-container {
 		padding-bottom: 20px;
 	}
 
-	.tarjeta {
+	.skill-card {
 		width: 100px;
 		height: 100px;
 		padding: 20px;
@@ -576,14 +531,14 @@ y no con margin.  */
 		font-size: 10px;
 	}
 
-	.contenedor-icono {
+	.skill-icon {
 		font-size: 35px;
 		padding: 10px;
 	}
 
 	/*Seccion cita*/
 
-	.contenedor-cita {
+	.quote-principal-container {
 		padding: 30px;
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -630,7 +585,7 @@ y no con margin.  */
 	.titulo {
 		font-size: 12px;
 	}
-	.contenedor-tarjetas-proyectos {
+	.cards-container-proyectos {
 		margin-bottom: 0px;
 		padding-bottom: 20px;
 	}

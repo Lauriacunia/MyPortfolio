@@ -34,7 +34,6 @@ ul {
 	list-style-type: none;
 }
 
-
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ      FONTS      ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
 h2 {
@@ -51,21 +50,20 @@ h3 {
 
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ     THEMES    ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
-
 .theme-simple {
 	background-color: #ffffff;
-	color:#130817;
-	box-shadow: 8px 8px 8px  #cf97a2;
+	color: #130817;
+	box-shadow: 8px 8px 8px #cf97a2;
 }
 .theme-flower {
 	background-color: #dc143c;
-	color:white;
+	color: white;
 	box-shadow: 3px 3px 3px #a8a0ac;
 }
 
 .theme-dark {
 	background-color: #130817;
-	color:white;
+	color: white;
 }
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ   LAYOUT   ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
@@ -96,7 +94,7 @@ h3 {
 }
 .size-60 {
 	width: 60%;
-}/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ PSEUDOCLASES Y PSEUDOELEMENTOS ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
+} /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ PSEUDOCLASES Y PSEUDOELEMENTOS ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
 a:link,
 a:visited {
@@ -104,7 +102,7 @@ a:visited {
 }
 .navbar-link:hover {
 	color: #dc143c;
-	font-weight: 500;
+	font-weight: 550;
 }
 .theme-solid-link:hover {
 	text-decoration: none;
@@ -114,10 +112,11 @@ a:visited {
 	box-shadow: 3px 3px 3px #a8a0ac;
 }
 
-.theme-solid-link a, .navbar-link a {
+.theme-solid-link a,
+.navbar-link a {
 	color: inherit;
 }
-.skill-card:hover {
+.card:hover {
 	background-color: #dc143c;
 	box-shadow: 3px 3px 3px #a8a0ac;
 }
@@ -200,30 +199,27 @@ a:visited {
 	margin-bottom: 60px;
 }
 .quote {
-	font-family: 'Work Sans', sans-serif;	
+	font-family: 'Work Sans', sans-serif;
 }
 
-.skill-card {	
+.card {
 	padding: 15px;
 	margin: 15px;
 	transition: 0.3s;
 }
-.skill-icon {
+.card-skill-icon {
 	min-width: 160px;
 	padding: 10px;
 	color: #f5f3f5;
 	font-size: 100px;
 }
 
-
-
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
                              CITA
 ▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
-
 .quote-principal-container {
-	padding: 70px;	
+	padding: 70px;
 }
 .quote-principal {
 	font-family: 'Lato', sans-serif;
@@ -232,77 +228,28 @@ a:visited {
 	padding: 40px;
 	margin: 40px;
 }
-.quote-icon{
+.quote-icon {
 	font-size: 80px;
 }
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
                              PROYECTOS
 ▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
-.seccion-misproyectos {
-	display: flex;
-	justify-content: center;
+.myProjects {
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
 
-.header-navbar-proyectos {
-	display: flex;
-	margin: 20px;
+.projects-title {
+	margin-top: 60px;
+	margin-bottom: 20px;
 }
 
-.contenedor-misproyectos {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #ffffff;
-	width: 90%;
-}
-.filtros {
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-}
-
-.cards-container-proyectos {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	align-content: space-around;
-	width: 90%;
-	margin-bottom: 60px;
-}
-.proyecto {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-	background-color: #130817;
+.project-img {	
 	width: 300px;
-	height: 250px;
-	padding: 15px;
-	margin: 20px;
-	/* a ninguna skill-card le puse border radius 
-    por una decision de estilo*/
-}
-.contenedor-titulo {
-	padding: 0px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
-
-/* Ni display flex ni justify content ni height son necesarios aqui */
-.imagen-proyecto {
-	display: flex;
-	justify-content: center;
-	width: 150px;
 	height: auto;
 }
-.titulo {
-	font-family: 'Work Sans', sans-serif;
-	text-align: center;
-	color: #f5f3f5;
-}
+
 
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
                              FOOTER 
@@ -419,14 +366,14 @@ a:visited {
 		font-size: 15px;
 	}
 
-	.skill-card {
+	.card {
 		width: 120px;
 		height: 120px;
 		/* este padding es innecesario */
 		padding: 20px;
 		margin: 5px;
 	}
-	.skill-icon {
+	.card-skill-icon {
 		font-size: 60px;
 	}
 }
@@ -520,7 +467,7 @@ a:visited {
 		padding-bottom: 20px;
 	}
 
-	.skill-card {
+	.card {
 		width: 100px;
 		height: 100px;
 		padding: 20px;
@@ -531,7 +478,7 @@ a:visited {
 		font-size: 10px;
 	}
 
-	.skill-icon {
+	.card-skill-icon {
 		font-size: 35px;
 		padding: 10px;
 	}
@@ -573,7 +520,7 @@ a:visited {
 		padding: 10px;
 		margin: 5px;
 	}
-	.imagen-proyecto {
+	.project-img {
 		width: 100px;
 		height: auto;
 		margin: 0px;

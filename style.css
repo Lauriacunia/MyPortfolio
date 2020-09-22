@@ -20,6 +20,7 @@ html {
 }
 body {
 	background-color: #f5f3f5;
+	overflow: hidden;
 }
 
 a {
@@ -304,24 +305,50 @@ a:visited {
 ----------------------------------*/
 @media (min-width: 600px) and (max-width: 900px) {
 	/* Seccion Header*/
-
+	.header{
+		margin-top: 15px;
+	}
 	.menu-responsive-icon {
 		display: block;
-		/* justify-content no aplica aqui ya que menu-responsive-icon no es flex sino block */
-		justify-content: left;
 		color: #dc143c;
-		font-size: 35px;
-		/* fijate que por este margin tu icono se ve algo corrido respecto a la seccion que sigue, 
-        yo le daria margin top y bottom pero no a la izquierda o a la derecha */
-		margin: 20px;
+		font-size: 40px;
+		border: none;	
+		position: absolute;
+		top: 5px;
+		right: 50px;	
 	}
-	.hidde-menu-header {
-		display: none;
+/* Inicio Estilado del menu header responsive */
+
+    .header-navbar-responsive{ /* cambio el estilo de la navbar solo en responsive */
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background-color: #dc143c;
+	height: 100vh;
+	color: white;
+	position: absolute;
+	opacity: 0.8;
+	top: 55px;
+	right: 0px;
+	}
+	.navbar-link:hover {
+		color: #130817;
+		font-weight: 550;
+	}
+	.theme-solid-link {
+		text-decoration: none;
+		color: white;	/*podria sacarle la clase desde JS*/	
+		border: none;
+		
+	}
+	.theme-solid-link:hover {
+		box-shadow: none;
 	}
 
-	.header-navbar ul {
-		flex-direction: column;
-		align-items: flex-start;
+	/* fin estilado menu header */
+
+	.header-navbar-is-hidden {
+		transform: translateX(228px);
 	}
 	/*Seccion hello*/
 
@@ -386,13 +413,57 @@ a:visited {
 	/*Header */
 
 	/* mismas observaciones que en tablet */
+	.header{
+		margin-top: 15px;
+	}
 	.menu-responsive-icon {
 		display: block;
-		justify-content: left;
 		color: #dc143c;
-		font-size: 25px;
-		margin: 10px;
+		font-size: 40px;
+		border: none;	
+		position: absolute;
+		top: 5px;
+		right: 50px;	
 	}
+
+	/* inicio estilado de navbar */
+	
+    .header-navbar-responsive{ /* cambio el estilo de la navbar solo en responsive */
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background-color: #dc143c;
+	height: 100vh;
+	color: white;
+	position: absolute;
+	opacity: 0.8;
+	top: 55px;
+	right: 0px;
+	}
+
+	.navbar-link:hover {
+		color: #130817;
+		font-weight: 550;
+	}
+	.theme-solid-link {
+		text-decoration: none;
+		color: white;	/*podria sacarle la clase desde JS*/	
+		border: none;
+		
+	}
+	.theme-solid-link:hover {
+		box-shadow: none;
+	}
+	/* fin de estilado de nav-bar*/
+	.header-navbar-is-hidden {
+		transform: translateX(228px);
+	}
+
+
+
+
+
+
 
 	/*Seccion hello*/
 

@@ -1,13 +1,10 @@
-const menu-responsive-icon = document.querySelector('.menu-responsive-icon');
-
-
-const navResponsive = document.querySelector('.header-navbar');
+const headerMenuIcon = document.querySelector('.menu-responsive-icon');
+const navbarResponsive = document.querySelector('.header-navbar-responsive');
 
 
 
-menu-responsive-icon.onclick = () => {
+headerMenuIcon.onclick = () => {
 
-navResponsive.classList.toggle("hidde-menu-header")
-
+navbarResponsive.classList.toggle("header-navbar-is-hidden")
 
 }

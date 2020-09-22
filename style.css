@@ -20,7 +20,7 @@ html {
 }
 body {
 	background-color: #f5f3f5;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 a {
@@ -131,6 +131,8 @@ a:visited {
 
 .menu-responsive-icon {
 	display: none;
+	outline-style: none;
+	cursor: pointer;
 }
 
 .header-navbar {
@@ -246,12 +248,16 @@ a:visited {
 	margin-bottom: 20px;
 }
 
-.project-img {	
+.project-img {
 	width: 300px;
 	height: auto;
 }
 
-
+.menu-filter-icon {
+	display: none;
+	outline-style: none;
+	cursor: pointer;
+}
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
                              FOOTER 
 ▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
@@ -305,31 +311,32 @@ a:visited {
 ----------------------------------*/
 @media (min-width: 600px) and (max-width: 900px) {
 	/* Seccion Header*/
-	.header{
+	.header {
 		margin-top: 15px;
 	}
 	.menu-responsive-icon {
 		display: block;
 		color: #dc143c;
 		font-size: 40px;
-		border: none;	
+		border: none;
 		position: absolute;
 		top: 5px;
-		right: 50px;	
+		right: 50px;
 	}
-/* Inicio Estilado del menu header responsive */
-
-    .header-navbar-responsive{ /* cambio el estilo de la navbar solo en responsive */
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-	background-color: #dc143c;
-	height: 100vh;
-	color: white;
-	position: absolute;
-	opacity: 0.8;
-	top: 55px;
-	right: 0px;
+	/* Inicio Estilado del menu header responsive */
+	/* cambio el estilo de la navbar solo en responsive */
+	.header-navbar-responsive {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		background-color: #dc143c;
+		height: 100vh;
+		color: white;
+		position: absolute;
+		opacity: 0.8;
+		top: 55px;
+		right: 0px;
+		transition: 0.8s;
 	}
 	.navbar-link:hover {
 		color: #130817;
@@ -337,9 +344,8 @@ a:visited {
 	}
 	.theme-solid-link {
 		text-decoration: none;
-		color: white;	/*podria sacarle la clase desde JS*/	
+		color: white; /*podria sacarle la clase desde JS*/
 		border: none;
-		
 	}
 	.theme-solid-link:hover {
 		box-shadow: none;
@@ -403,6 +409,40 @@ a:visited {
 	.card-skill-icon {
 		font-size: 60px;
 	}
+
+	/*-----MIS PROYECTOS*/
+	.myProjects {
+		position: relative; /* para posicionar estrella y menu */
+	}
+	.menu-filter-icon {
+		display: block;
+		color: #dc143c;
+		font-size: 40px;
+		border: none;
+		position: absolute;
+		top: -50px;
+		right: 45px;
+	}
+
+	.navbar-filter-container {
+		flex-direction: column;
+	}
+	.menu-filter-responsive {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		background-color: #dc143c;
+		height: 100vh;
+		color: white;
+		position: absolute;
+		opacity: 0.8;
+		top: 0px;
+		right: 0px;
+		transition: 0.8s;
+	}
+	.filter-navbar-is-hidden{
+		transform: translateX(228px);
+	}
 }
 
 /*--------------------------------
@@ -413,32 +453,33 @@ a:visited {
 	/*Header */
 
 	/* mismas observaciones que en tablet */
-	.header{
+	.header {
 		margin-top: 15px;
 	}
 	.menu-responsive-icon {
 		display: block;
 		color: #dc143c;
 		font-size: 40px;
-		border: none;	
+		border: none;
 		position: absolute;
 		top: 5px;
-		right: 50px;	
+		right: 50px;
 	}
 
 	/* inicio estilado de navbar */
-	
-    .header-navbar-responsive{ /* cambio el estilo de la navbar solo en responsive */
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-	background-color: #dc143c;
-	height: 100vh;
-	color: white;
-	position: absolute;
-	opacity: 0.8;
-	top: 55px;
-	right: 0px;
+
+	.header-navbar-responsive {
+		/* cambio el estilo de la navbar solo en responsive */
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		background-color: #dc143c;
+		height: 100vh;
+		color: white;
+		position: absolute;
+		opacity: 0.8;
+		top: 55px;
+		right: 0px;
 	}
 
 	.navbar-link:hover {
@@ -447,9 +488,8 @@ a:visited {
 	}
 	.theme-solid-link {
 		text-decoration: none;
-		color: white;	/*podria sacarle la clase desde JS*/	
+		color: white; /*podria sacarle la clase desde JS*/
 		border: none;
-		
 	}
 	.theme-solid-link:hover {
 		box-shadow: none;
@@ -458,12 +498,6 @@ a:visited {
 	.header-navbar-is-hidden {
 		transform: translateX(228px);
 	}
-
-
-
-
-
-
 
 	/*Seccion hello*/
 

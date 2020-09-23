@@ -34,7 +34,9 @@ img {
 ul {
 	list-style-type: none;
 }
-
+button {
+	outline-style:none;
+}
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ      FONTS      ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
 h2 {
@@ -112,9 +114,15 @@ a:visited {
 	border: 1px solid #dc143c;
 	box-shadow: 3px 3px 3px #a8a0ac;
 }
-
+.btn-filter.theme-solid-link:hover{
+	text-decoration: none;
+	color: white;
+	background-color:  #130817;
+	border: 1px solid #130817;
+	box-shadow: 3px 3px 3px #dc143c;
+}
 .theme-solid-link a,
-.navbar-link a {
+.navbar-link a, .btn-filter.theme-solid-link{
 	color: inherit;
 }
 .card:hover {
@@ -256,6 +264,15 @@ a:visited {
 .menu-filter-icon {
 	display: none;
 	outline-style: none;
+	cursor: pointer;
+}
+
+.btn-filter {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	padding: 10px 20px;
+	text-align: center;
+	letter-spacing: 4px;
 	cursor: pointer;
 }
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
@@ -663,4 +680,8 @@ a:visited {
 		height: auto;
 		margin: 5px;
 	}
+}
+
+.hidde {
+	display: none;
 }

@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -20,7 +19,6 @@ body {
 	background-color: #f5f3f5;
 	overflow-x: hidden;
 }
-
 a {
 	text-decoration: none;
 	transition: 0.3s;
@@ -36,13 +34,11 @@ button {
 	outline-style:none;
 }
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ      FONTS      ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
-
 h2 {
-	font-size: 50px;
+	font-size: 3em;
 }
-
 h3 {
-	font-size: 30px;
+	font-size: 2em;
 }
 
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ     THEMES    ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
@@ -74,14 +70,12 @@ h3 {
 	justify-content: center;
 	align-items: center;
 }
-
 .in-grid {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
-
 .size-90 {
 	width: 90%;
 }
@@ -90,7 +84,9 @@ h3 {
 }
 .size-60 {
 	width: 60%;
-} /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ PSEUDOCLASES Y PSEUDOELEMENTOS ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
+}
+
+/*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ PSEUDOCLASES Y PSEUDOELEMENTOS ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
 a:link,
 a:visited {
@@ -129,21 +125,15 @@ a:visited {
                             HEADER 
 ▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
 
-.header {
-	justify-content: flex-end;
-}
-
 .menu-responsive-icon {
 	display: none;
 	outline-style: none;
 	cursor: pointer;
 }
-
 .header-navbar {
 	display: flex;
 	margin: 20px 0px;
 }
-
 .navbar-link {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 16px;
@@ -168,12 +158,10 @@ a:visited {
 	padding: 70px;
 	width: 90%;
 }
-
 .hello-text {
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
-
 .name {
 	/* No es necesario display: flex aqui */
 	display: flex;
@@ -184,7 +172,6 @@ a:visited {
 	color: #5c555f;
 	margin-bottom: 60px;
 }
-
 .hello-img {
 	max-width: 40%;
 }
@@ -197,7 +184,6 @@ a:visited {
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
-
 .skills-title {
 	margin-top: 60px;
 	margin-bottom: 20px;
@@ -209,7 +195,6 @@ a:visited {
 .quote {
 	font-family: 'Work Sans', sans-serif;
 }
-
 .card {
 	padding: 15px;
 	margin: 15px;
@@ -248,7 +233,6 @@ a:visited {
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
-
 .projects-title {
 	margin-top: 60px;
 	margin-bottom: 20px;
@@ -257,20 +241,23 @@ a:visited {
 .card-project{
 	width: 250px;
 	height: 350px;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .project-img {
 	display:flex;
+	margin: 30px 0px;
 	width: 100%;
 	height: auto;
 }
-
+.title-container{
+	justify-content: start;
+    height: 50px;
+}
 .menu-filter-icon {
 	display: none;
 	outline-style: none;
 	cursor: pointer;
 }
-
 .btn-filter {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 16px;
@@ -300,7 +287,6 @@ a:visited {
 	align-items: center;
 	margin-bottom: 30px;
 }
-
 .links-contacto {
 	display: flex;
 	align-items: center;
@@ -313,12 +299,6 @@ a:visited {
 .icono-footer {
 	font-size: 25px;
 }
-
-/* este elemento no existe en tu html */
-.imagen-final {
-	width: 50px;
-	height: auto;
-}
 .imagen-contacto {
 	width: 350px;
 }
@@ -326,7 +306,20 @@ a:visited {
 /*▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼
                              DISEÑO RESPONSIVE 
 ▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼*/
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
 /*--------------------------------
                TABLET       
 ----------------------------------*/
